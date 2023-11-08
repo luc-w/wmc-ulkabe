@@ -1,0 +1,2369 @@
+﻿**************************************************************
+      BEFKI K-3 Updating (Huegel)
+**************************************************************
+
+**************************************************************
+    Definition of recorded data 
+**************************************************************
+
+<data>
+/ columns = [date time subject blocknum blockcode trialnum trialcode response latency stimulus correct values.ncorrect values.stopscript values.vpcode_hd1 values.practice_correct]
+/ labels = TRUE
+</data>
+
+**************************************************************
+    Allgemeine aufgabenuebergreifende Features 
+**************************************************************
+
+<defaults>
+/ screencolor = transparent
+/ canvasaspectratio = (2000, 1200)
+/ canvasposition = (50%, 50%)
+/ canvassize = (100%, 100%)
+/ inputdevice = mouse
+</defaults>
+
+<instruct>
+/ nextlabel = "Weiter"
+/ prevlabel = "Zurueck "
+/ lastlabel = "Weiter"
+/ inputdevice = mouse
+/ font = ("Arial", -24, 400, 0, 34)
+/ windowsize = (100%,100%)
+</instruct>
+
+<values>
+/duration_sonne=2000
+/duration_arrow = 1750
+/duration_animation = 3000
+/duration_audio1 = 10000
+/duration_audio2 = 4500
+/duration_audio3 = 8000
+/duration_audio4 = 7000
+/duration_audio5 = 7000
+/duration_audio6 = 14000
+/duration_audio7 = 1000
+/duration_audio8 = 11000
+/duration_audio9 = 6000
+/duration_audio10 = 6000
+/duration_audio11 = 7000
+/duration_audio12 = 5000
+/duration_audio13 = 6000
+/duration_audio14 = 8000
+/duration_audio15 = 30000
+/duration_audio16 = 10100
+/duration_audio17 = 9000
+/duration_audio_zwischenload=10100
+/monsternum1 = 0
+/monsternum2 = 0
+/monsternum3 = 0
+/retnum1 = 0
+/retnum2 = 0
+/retnum3 = 0
+/arrownum = 0
+/login_time = 500
+/ncorrect = 0
+/stopscript = 0
+/vpcode_hd1 = 0
+/practice_correct=0
+</values>
+
+<parameters>
+/ testgroup = 0
+/ vpcode_hd2 = 0
+</parameters>
+
+
+**************************************************************
+    Grafiken
+**************************************************************
+
+<item item_monster>
+/ 1 = "m1_adult.png"
+/ 2 = "m2_adult.png"
+/ 3 = "m3_adult.png"
+/ 4 = "m4_adult.png"
+/ 5 = "m5_adult.png"
+/ 6 = "m6_adult.png"
+/ 7 = "m7_adult.png"
+/ 8 = "m8_adult.png"
+</item>
+
+<item item_arrow>
+/ 1 = "p1_r.png"
+/ 2 = "p2_r.png"
+/ 3 = "p3_r.png"
+/ 4 = "p4_r.png"
+/ 5 = "p5_r.png"
+/ 6 = "p6_r.png"
+/ 7 = "p7_r.png"
+/ 8 = "p8_r.png"
+/ 9 = "p1_l.png"
+/ 10 = "p2_l.png"
+/ 11 = "p3_l.png"
+/ 12 = "p4_l.png"
+/ 13 = "p5_l.png"
+/ 14 = "p6_l.png"
+/ 15 = "p7_l.png"
+/ 16 = "p8_l.png"
+/ 17 = "p1_o.png"
+/ 18 = "p2_o.png"
+/ 19 = "p3_o.png"
+/ 20 = "p4_o.png"
+/ 21 = "p5_o.png"
+/ 22 = "p6_o.png"
+/ 23 = "p7_o.png"
+/ 24 = "p8_o.png"
+/ 25 = "p1_u.png"
+/ 26 = "p2_u.png"
+/ 27 = "p3_u.png"
+/ 28 = "p4_u.png"
+/ 29 = "p5_u.png"
+/ 30 = "p6_u.png"
+/ 31 = "p7_u.png"
+/ 32 = "p8_u.png"
+</item>
+
+
+
+**************************************************************
+    Audios
+**************************************************************
+
+<video audio_betweenload>
+/ items = ("h_zwischen_loads_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio1>
+/ items = ("h1_adult.mp3")
+/ playthrough = false
+</video>
+<video audio2>
+/ items = ("h2_adult.mp3")
+/ playthrough = false
+</video>
+<video audio3>
+/ items = ("h3_adult.mp3")
+/ playthrough = false
+</video>
+<video audio4>
+/ items = ("h4_adult.mp3")
+/ playthrough = false
+</video>
+<video audio5>
+/ items = ("h5_adult.mp3")
+/ playthrough = false
+</video>
+<video audio6>
+/ items = ("h6_adult.mp3")
+/ playthrough = false
+</video>
+<video audio7>
+/ items = ("h7_adult.mp3")
+/ playthrough = false
+</video>
+<video audio8>
+/ items = ("h8_adult.mp3")
+/ playthrough = false
+</video>
+<video audio9>
+/ items = ("h9_adult.mp3")
+/ playthrough = false
+</video>
+<video audio10>
+/ items = ("h10_adult.mp3")
+/ playthrough = false
+</video>
+<video audio11>
+/ items = ("h11_adult.mp3")
+/ playthrough = false
+</video>
+<video audio12>
+/ items = ("h12_adult.mp3")
+/ playthrough = false
+</video>
+<video audio13>
+/ items = ("h13_adult.mp3")
+/ playthrough = false
+</video>
+<video audio14>
+/ items = ("h14_adult.mp3")
+/ playthrough = false
+</video>
+<video audio15>
+/ items = ("h15_adult.mp3")
+/ playthrough = false
+</video>
+<video audio16>
+/ items = ("h_zwischen_loads_adult.mp3")
+/ playthrough = false
+</video>
+<video audio17>
+/ items = ("h17_adult.mp3")
+/ playthrough = false
+</video>
+
+
+
+**************************************************************
+    Listen
+**************************************************************
+
+<list list_monster1>
+/ items = ( 3, //beispiel load1
+            2, //uebe11
+            1, //uebe12
+			4, //beispiel load2
+            6, //uebe21
+			4, //1.3a
+            5, //1.3b
+            2, //2.4a
+            4, //2.4b
+            1, //2.5a
+            6, //2.5b
+            2, //2.6a
+            5, //2.6b
+            1, //2.7a
+            3, //2.7b
+            3, //3.1a
+            1, //3.1b
+            3, //3.2a
+			2, //3.2b
+			3,//3.3a
+			2//3.3b
+            )
+/ selectionmode = sequence
+</list>
+
+<list list_monster2>
+/ items = ( //beispiel load1
+            //uebe11
+            //uebe12
+			3, //beispiel load2
+            7, //uebe21
+			 //1.3a
+             //1.3b
+            3, //2.4a
+            5, //2.4b
+            7, //2.5a
+            8, //2.5b
+            3, //2.6a
+            7, //2.6b
+            6, //2.7a
+            4, //2.7b
+            7, //3.1a
+            2, //3.1b
+            4, //3.2a
+			5, //3.2b
+			1,//3.3a
+			4,//3.3b
+            )
+/ selectionmode = sequence
+</list>
+
+
+
+<list list_monster3>
+/ items = ( //beispiel load1
+            //uebe11
+            //uebe12
+			 //beispiel load2
+             //uebe21
+			 //1.3a
+             //1.3b
+             //2.4a
+             //2.4b
+             //2.5a
+             //2.5b
+             //2.6a
+             //2.6b
+             //2.7a
+             //2.7b
+            8, //3.1a
+            5, //3.1b
+            6, //3.2a
+			7, //3.2b
+			8,//3.3a
+			6,//3.3b
+            )
+/ selectionmode = sequence
+</list>
+
+
+
+
+<list list_arrow>
+/ items = (	3, 19, //beispiel load 1
+			26, //uebe11
+			1, 25, //uebe12
+			3, 28, //beispiel load2 
+			14, 7, //uebe21
+			28, 28, 4, //1.3a
+			13, 13, 21, //1.3b
+            18, 3, 26, 3, 26, 27, 10,11,//2.4a
+            20, 5, 20, 21, 28, 13, 12, 29 //2.4b
+            25, 31, 25, 7, 1, 23, 1, 15, 9, 23, //2.5a
+			6, 32, 22, 8, 30, 24, 22, 32, 22, 16 //2.5b
+            10, 3, 10, 19, 26, 3, 2, 27, 26, 11, 10, 27  //2.6a
+            13, 23, 21, 23, 13, 15, 29, 7, 5, 31, 29, 31, //2.6b
+            25, 6, 9, 22, 25, 6, 1, 22, 1, 14, 17, 30, 17, 30, //2.7a
+            27, 20, 11, 12, 19, 12, 3, 28, 19, 28, 27, 4, 19, 4,//2.7b
+            19, 15, 8,  //3.1a
+            17, 10, 21,  //3.1b
+            27, 12, 6, 19, 28, 6, //3.2a
+			10, 29, 7, 10, 5, 23, //3.2b
+			11, 1, 24, 19, 25, 32, 19, 9, 24, //3.3a
+			26, 28, 6, 26, 20, 22, 2, 12, 6//3.3b
+
+			) 
+/ selectionmode = sequence
+</list>
+
+
+**************************************************************
+    Instruction
+**************************************************************
+
+<picture questionmark>
+/ position = (50%, 50%)
+/ items = ("fragezeichen.png")
+/ size = (30%, 30%)
+/ erase=false
+</picture>
+
+<trial intro_questionmark>
+/ inputdevice = mouse
+/ validresponse = (vor)
+/ stimulusframes = [1= background_green, questionmark, vor, speaker]
+</trial>
+
+<picture speaker>
+/ position = (90%, 10%)
+/ items = ("speaker.PNG")
+/ size = (12%, 12%)
+/ erase = false
+</picture>
+
+<shape no_speaker>
+/ shape = rectangle
+/ size = (15%, 15%)
+/ color = transparent
+/ position = (90%, 10%)
+/ erase = false
+</shape>
+
+<picture back>
+/ position = (10%, 85%)
+/ items = ("back.PNG")
+/ size = (12%, 12%)
+/ erase=false
+</picture>
+
+<picture richtig>
+/ position = (35%, 35%)
+/ items = ("smiley_yes_adult.PNG")
+/ size = (30%, 30%)
+/ erase=false
+</picture>
+
+<picture falsch>
+/ position = (35%, 35%)
+/ items = ("smiley_no_adult.PNG")
+/ size = (30%, 30%)
+/ erase=false
+</picture>
+
+<picture sonne>
+/ position = (50%, 50%)
+/ items = ("sonne_adult.PNG")
+/ size = (30%, 30%)
+/ erase=false
+</picture>
+
+<picture zurueck>
+/ position = (10%, 85%)
+/ items = ("pfeil_zurueck.PNG")
+/ size = (10%, 10%)
+/ animation = path(values.duration_animation, 1, 10,90, 10,90.1)
+/ erase=false
+</picture>
+
+<picture vor>
+/ position = (90%, 85%)
+/ items = ("pfeil_vor.PNG")
+/ size = (10%, 10%)
+/ animation = path(values.duration_animation, 1, 90,90, 90,90.1)
+/ erase=false
+</picture>
+
+<picture ende>
+/ position = (50%, 50%)
+/ items = ("start.PNG")
+/ size = (40%, 40%)
+</picture>
+
+**************************************************************
+Belohnungen
+**************************************************************
+
+<picture picture_konfetti>
+/ position = (50%, 50%)
+/ items = ("konfetti_adult.PNG")
+/ size = (90%, 90%)
+/ erase = false
+</picture>
+
+
+
+<picture background_green>
+/ numitems = 1
+/ position = (50, 50)
+/ size = (150%, 150%)
+/ items = ("hintergrund_huegel_adult.png")
+/ erase = false
+</picture>
+
+<picture background_red>
+/ numitems = 1
+/ position = (50, 50)
+/ size = (150%, 150%)
+/ items = ("background_red_adult.png")
+/ erase = false
+</picture>
+
+<item background_colors >
+/ 1 = "background_red_adult.PNG"
+/ 2 = "hintergrund_huegel_adult.PNG"
+</item>
+
+<picture background>
+/ position = (50%, 50%)
+/ items = background_colors
+/ size = (150%, 150%)
+/ erase = false
+</picture>
+
+
+*******************Fragezeichen*************************
+
+<picture Fz1>
+/ items = ("q_adult.png")
+/ size = (20%, 20%)
+/ animation = path(values.duration_animation, 1, 10,20, 10,20.1))
+/ erase=false
+</picture>
+<picture Fz2>
+/ position = (50%, 30%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 35,20, 35,20.1)
+/ erase=false
+</picture>
+<picture Fz3>
+/ position = (80%, 30%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 60,20, 60,20.1)
+/ erase=false
+</picture>
+<picture Fz4>
+/numitems = 1
+/ position = (20%, 52%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 10,50, 10,50.1)
+/ erase=false
+</picture>
+<picture Fz5>
+/numitems = 1
+/ position = (50%, 52%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 35,50, 35,50.1)
+/ erase=false
+</picture>
+<picture Fz6>
+/numitems = 1
+/ position = (80%, 52%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 60,50, 60,50.1)
+/ erase=false
+</picture>
+<picture Fz7>
+/numitems = 1
+/ position = (20%, 82%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 10,80, 10,80.1)
+/ erase=false
+</picture>
+<picture Fz8>
+/numitems = 1
+/ position = (50%, 82%)
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 35,80, 35,80.1)
+/ erase=false
+</picture>
+<picture Fz9>
+/ size = (20%, 20%)
+/ items = ("q_adult.png")
+/ animation = path(values.duration_animation, 1, 60,80, 60,80.1)
+/ erase=false
+</picture>
+
+************Hügel und Ränder************
+<picture ret_pos1_border>
+/ animation = path(values.duration_animation, 1, 10,20, 10,20.1))
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel1>
+/ items = ("huegel_adult.png")
+/ size = (20%, 20%)
+/ animation = path(values.duration_animation, 1, 10,20, 10,20.1))
+/ erase=false
+</picture>
+<picture ret_pos2_border>
+/ animation = path(values.duration_animation, 1, 35,20, 35,20.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel2>
+/ position = (50%, 30%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 35,20, 35,20.1)
+/ erase=false
+</picture>
+<picture ret_pos3_border>
+/ animation = path(values.duration_animation, 1, 60,20, 60,20.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel3>
+/ position = (80%, 30%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 60,20, 60,20.1)
+/ erase=false
+</picture>
+<picture ret_pos4_border>
+/ animation = path(values.duration_animation, 1, 10,50, 10,50.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel4>
+/numitems = 1
+/ position = (20%, 52%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 10,50, 10,50.1)
+/ erase=false
+</picture>
+<picture ret_pos5_border>
+/ animation = path(values.duration_animation, 1, 35,50, 35,50.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel5>
+/numitems = 1
+/ position = (50%, 52%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 35,50, 35,50.1)
+/ erase=false
+</picture>
+<picture ret_pos6_border>
+/ animation = path(values.duration_animation, 1, 60,50, 60,50.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel6>
+/numitems = 1
+/ position = (80%, 52%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 60,50, 60,50.1)
+/ erase=false
+</picture>
+<picture ret_pos7_border>
+/ animation = path(values.duration_animation, 1, 10,80, 10,80.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel7>
+/numitems = 1
+/ position = (20%, 82%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 10,80, 10,80.1)
+/ erase=false
+</picture>
+<picture ret_pos8_border>
+/ animation = path(values.duration_animation, 1, 35,80, 35,80.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel8>
+/numitems = 1
+/ position = (50%, 82%)
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 35,80, 35,80.1)
+/ erase=false
+</picture>
+<picture ret_pos9_border>
+/ animation = path(values.duration_animation, 1, 60,80, 60,80.1)
+/ items = ("border2_updating_adults.PNG")
+/ size = (22%, 22%)
+/ erase=false
+</picture>
+<picture huegel9>
+/ size = (20%, 20%)
+/ items = ("huegel_adult.png")
+/ animation = path(values.duration_animation, 1, 60,80, 60,80.1)
+/ erase=false
+</picture>
+
+
+************************  Monster ************************
+
+<picture picture_p1_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (20%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,20, 10,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p1_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (20%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,20, 10,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p1_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (20%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,20, 10,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p2_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (50%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 35,20, 35,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p2_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (50%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 35,20, 35,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p2_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (50%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 35,20, 35,20) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p3_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (80%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,20, 60,20 ) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p3_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (80%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,20, 60,20 ) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p3_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (80%, 19%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,20, 60,20 ) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+<picture picture_p4_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (20%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  10,50, 10,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p4_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (20%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  10,50, 10,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p4_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (20%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  10,50, 10,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p5_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ size = (25%, 25%)
+/ position = (50%, 49%)
+/ animation = path(values.duration_animation, 1,  35,50, 35,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p5_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ size = (25%, 25%)
+/ position = (50%, 49%)
+/ animation = path(values.duration_animation, 1,  35,50, 35,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p5_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ size = (25%, 25%)
+/ position = (50%, 49%)
+/ animation = path(values.duration_animation, 1,  35,50, 35,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p6_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (50%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,50, 60,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p6_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (50%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,50, 60,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p6_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (50%, 49%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,50, 60,50) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+<picture picture_p7_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (20%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,80, 10,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p7_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (20%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,80, 10,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p7_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (20%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1, 10,80, 10,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p8_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (50%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  35,80, 35,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p8_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (50%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  35,80, 35,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p8_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (50%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  35,80, 35,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+<picture picture_p9_down1>
+/ items = item_monster
+/ select = values.monsternum1
+/ position = (80%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,80, 60,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p9_down2>
+/ items = item_monster
+/ select = values.monsternum2
+/ position = (80%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,80, 60,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+<picture picture_p9_down3>
+/ items = item_monster
+/ select = values.monsternum3
+/ position = (80%, 79%)
+/ size = (25%, 25%)
+/ animation = path(values.duration_animation, 1,  60,80, 60,80) 
+/ animation = size(values.duration_animation, 1, 20%, 20%, 1, 1, 1)
+/ erase=false
+</picture>
+
+
+
+
+********************* Arrows ************
+<picture learn_arrow>
+/ position = (90%, 50%)
+/ items = item_arrow
+/ select = values.arrownum
+/ size = (25%, 25%)
+/ erase = false
+</picture>
+
+*********** Abfrage 
+<picture ret_monster1>
+/ position = (90%, 50%)
+/ items = item_monster
+/ select = values.retnum1
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_monster2>
+/ position = (90%, 50%)
+/ items = item_monster
+/ select = values.retnum2
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_monster3>
+/ position = (90%, 50%)
+/ items = item_monster
+/ select = values.retnum3
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+********************************************************************
+Trials 
+********************************************************************
+*trial sonne
+<trial trial_sonne>
+/ stimulustimes = [0=background_green, sonne]
+/ trialduration = values.duration_sonne
+</trial>
+
+
+*** trial learn arrows 
+<trial trial_learn>
+/ ontrialbegin = [values.arrownum = list.list_arrow.nextvalue]
+/ stimulustimes = [0=background_green, learn_arrow , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9; 1750=background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,]
+/ trialduration = values.duration_arrow +1000
+</trial>
+
+<trial trial_bereit>
+/ stimulustimes = [0=background_green, vor, speaker, sonne, audio6; 
+				   14500=background_green, vor, no_speaker, sonne]
+/ inputdevice = mouse
+/ validresponse = (vor)
+/ responsetrial = ("vor", block.block_uebe11)
+/ beginresponsetime = values.duration_audio6
+</trial>
+
+<trial trial_bereit1>
+/ stimulustimes = [0=background_green, vor, speaker, sonne, audio7; 
+				   1500=background_green, vor, no_speaker, sonne]
+/ inputdevice = mouse
+/ validresponse = (vor)
+/ responsetrial = ("vor", block.block_instruction2)
+/ beginresponsetime = values.duration_audio7
+</trial>
+
+<trial trial_bereit2>
+/ stimulustimes = [0=background_green, vor, speaker, audio13; 6500=background_green, vor, no_speaker]
+/ inputdevice = mouse
+/ validresponse = (vor)
+/ responsetrial = ("vor", block.block_uebe21)
+/ beginresponsetime = values.duration_audio13
+</trial>
+
+<trial trial_question>
+/ stimulustimes = [0 = background_green, questionmark, vor, back, speaker, audio15;
+					29000 = background_green, no_speaker, vor, back, questionmark]
+/ inputdevice = mouse
+/ validresponse = (vor, back)
+/ beginresponsetime = values.duration_audio15
+</trial>
+
+
+<trial trial_question_r>
+/ stimulustimes = [0 = background_green, speaker, questionmark, audio14; 
+				   8500 = background_green, vor, no_speaker, questionmark]
+/ inputdevice = mouse
+/ validresponse = (vor, back)
+/ beginresponsetime = values.duration_audio14
+</trial>
+
+<trial trial_question_f>
+/ stimulustimes = [0 = background_red, speaker, questionmark, audio14; 
+				   8500 = background_red, vor, no_speaker, questionmark]
+/ inputdevice = mouse
+/ validresponse = (vor, back)
+/ beginresponsetime = values.duration_audio14
+</trial>
+
+<trial ende> 
+/ validresponse = (vor) 
+/ stimulustimes = [1 = background_green, picture_konfetti, speaker, audio17;
+					9500 = background_green, picture_konfetti, no_speaker, vor]
+/ beginresponsetime = values.duration_audio17
+</trial>
+
+
+
+*******************************************************************
+*** Belohnung *
+********************************************************************
+<trial belohnung1>  
+/ stimulusframes = [1=background_green, picture_konfetti, audio16]
+/ trialduration = values.duration_audio16 +500
+</trial>
+
+<trial belohnung2>  
+/ stimulusframes = [1=background_green,  picture_konfetti, audio16]
+/ trialduration = values.duration_audio16 +500
+</trial>
+
+
+********************************************INSTRUKTION LOAD1*********************************
+<trial trial_start>
+/ ontrialbegin = [values.arrownum = 0; values.monsternum1 = 0; values.monsternum2 = 0; values.retnum1 = 0; values.retnum2 = 0]
+/ stimulustimes = [0 = background_green, vor, speaker, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio1;
+                   10000 = background_green, vor, no_speaker, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ inputdevice = mouse
+/ validresponse = (vor)
+/ responsetrial = ("vor", trial.trial_beispiel1)
+/ beginresponsetime = values.duration_audio1
+</trial>
+
+<trial trial_beispiel1>
+/ ontrialbegin = [    values.monsternum1 = list.list_monster1.nextvalue]
+/ stimulustimes = [1 = background_green, picture_p5_down1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio2, speaker;
+				   // break for audio instruction
+				   4500 = background_green, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+/ beginresponsetime = values.duration_audio2
+</trial>
+
+<trial trial_learn_beispiel11>
+/ ontrialbegin = [values.arrownum = list.list_arrow.nextvalue]
+/ stimulustimes = [0=background_green, learn_arrow , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio3, speaker; 8000=background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,speaker]
+/ trialduration = values.duration_audio3 + 1000
+</trial>
+
+<trial trial_learn_beispiel12>
+/ ontrialbegin = [values.arrownum = list.list_arrow.nextvalue]
+/ stimulustimes = [0=background_green, learn_arrow , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio4, speaker; 7000=background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,speaker]
+/ trialduration = values.duration_audio4 +1000
+</trial>
+
+<trial ret_beispiel1>
+/ ontrialbegin = [values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulustimes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, 
+					   Fz1, Fz2, Fz3, Fz4, Fz5, Fz6, Fz7, Fz8, Fz9, audio5, speaker]			   
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ beginresponsetime = values.duration_audio5
+/ ontrialend = [
+	if(trial.ret_beispiel1.response=="huegel3"){
+		values.practice_correct += 1
+	}
+]
+</trial>
+
+********************************************ÜBUNG LOAD1***************************************
+********************************************uebe11
+<trial trial_uebe11>
+/ ontrialbegin = [    values.monsternum1 = list.list_monster1.nextvalue]
+/ stimulustimes = [0=background_green, picture_p5_down1 , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_uebe11>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulustimes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe11.response=="huegel8"){
+		values.practice_correct += 1
+	}
+] 
+</trial>
+
+<trial trial_sonne_uebe1>
+/ stimulustimes = [0=background_green, sonne]
+/ trialduration = values.duration_sonne
+</trial>
+
+********************************************uebe12
+<trial trial_uebe12>
+/ ontrialbegin = [    values.monsternum1 = list.list_monster1.nextvalue]
+/ stimulustimes = [0=background_green, picture_p2_down1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_uebe12>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel6)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe12.response=="huegel6"){
+		values.practice_correct += 1
+	}
+]
+</trial>
+
+
+********************************************INSTRUKTION LOAD2*********************************
+<trial trial_beispiel2>
+/ ontrialbegin = [    values.monsternum1 = list.list_monster1.nextvalue;
+                      values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [1=background_green,  picture_p3_down1, picture_p4_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio8, speaker;
+				   5000=background_green, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, speaker]
+/ trialduration = 12000
+/ beginresponsetime = values.duration_audio8
+</trial>
+
+<trial trial_learn_beispiel21>
+/ ontrialbegin = [values.arrownum = list.list_arrow.nextvalue]
+/ stimulustimes = [0=background_green, learn_arrow , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio9, speaker; 
+				   6100=background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, speaker]
+/ trialduration = values.duration_audio9 + 1000
+</trial>
+
+<trial trial_learn_beispiel22>
+/ ontrialbegin = [values.arrownum = list.list_arrow.nextvalue]
+/ stimulustimes = [0=background_green, learn_arrow , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, audio10, speaker; 
+				   6100=background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, speaker]
+/ trialduration = values.duration_audio10 + 1000
+</trial>
+
+<trial ret_beispiel2_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9, audio11, speaker]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel6)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ beginresponsetime = values.duration_audio11
+/ ontrialend = [
+	if(trial.ret_beispiel2_1.response=="huegel6"){
+		values.practice_correct += 1
+	}
+]
+</trial>
+<trial ret_beispiel2_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9, audio12, speaker]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ beginresponsetime = values.duration_audio12
+/ ontrialend = [
+	if(trial.ret_beispiel2_2.response=="huegel5"){
+		values.practice_correct += 1
+	}
+]
+</trial>
+
+
+********************************************uebe21
+<trial trial_uebe21>
+/ ontrialbegin = [    values.monsternum1 = list.list_monster1.nextvalue;
+                      values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p8_down1, picture_p2_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+
+<trial ret_uebe21_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel7)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe21_1.response=="huegel7"){
+		values.practice_correct += 1
+	}
+]
+</trial>
+<trial ret_uebe21_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ correctmessage = true(richtig, 1000)
+/ errormessage = true(falsch, 1000)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe21_2.response=="huegel3"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	if(values.practice_correct==7){
+		trial.trial_question_r
+	}
+	else {
+		trial.trial_question_f
+	}
+]
+</trial>
+
+
+
+********************************************TEST*********************************
+********************************************load1.3a
+<trial trial_load1_3a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue]
+/ stimulustimes = [0=background_green, picture_p1_down1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load1_3a>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load1.3b
+<trial trial_load1_3b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue]
+/ stimulustimes = [0=background_green, picture_p9_down1 , huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load1_3b>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green,  huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel4)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2_4a
+<trial trial_load2_4a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p6_down1, picture_p1_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_4a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_4a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green,  ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2_4b
+<trial trial_load2_4b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p9_down1, picture_p4_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_4b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_4b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel4)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+
+********************************************load2.5a
+<trial trial_load2_5a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p1_down1, picture_p5_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_5a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green,  ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_5a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel2)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+
+********************************************load2.5b
+<trial trial_load2_5b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p8_down1, picture_p4_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_5b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_5b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel7)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2.6a
+<trial trial_load2_6a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p3_down1, picture_p4_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_6a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel7)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_6a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2.6b
+<trial trial_load2_6b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p6_down1, picture_p9_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_6b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_6b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel9)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2.7
+<trial trial_load2_7a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p2_down1, picture_p7_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_7a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_7a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load2_7b
+<trial trial_load2_7b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p5_down1, picture_p6_down2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load2_7b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel2)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load2_7b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel9)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+
+********************************************load3_1a
+<trial trial_load3_1a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p4_down1, picture_p6_down2, picture_p2_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_1a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel1)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_1a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_1a_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load3_1b
+<trial trial_load3_1b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p6_down1, picture_p9_down2, picture_p7_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_1b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel3)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_1b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_1b_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel4)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load3_2a
+<trial trial_load3_2a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p1_down1, picture_p3_down2, picture_p7_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_2a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel1)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_2a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_2a_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel9)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+
+********************************************load3_2b
+<trial trial_load3_2b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p3_down1, picture_p4_down2, picture_p8_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_2b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel1)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_2b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_2b_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel6)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+
+
+********************************************load3_3a
+<trial trial_load3_3a>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p9_down1, picture_p2_down2, picture_p4_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_3a_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel2)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_3a_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel5)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_3a_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel1)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+********************************************load3_3b
+<trial trial_load3_3b>
+/ ontrialbegin = [	values.monsternum1 = list.list_monster1.nextvalue;
+					values.monsternum2 = list.list_monster2.nextvalue;
+					values.monsternum3 = list.list_monster3.nextvalue;]
+/ stimulustimes = [0=background_green, picture_p1_down1, picture_p3_down2, picture_p7_down3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9]
+/ trialduration = values.duration_animation
+</trial>
+<trial ret_load3_3b_1>
+/ ontrialbegin = [    values.retnum1 = list.list_monster1.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel8)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_3b_2>
+/ ontrialbegin = [    values.retnum2 = list.list_monster2.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster2, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel2)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+<trial ret_load3_3b_3>
+/ ontrialbegin = [    values.retnum3 = list.list_monster3.currentvalue]
+/ inputdevice = mouse
+/ stimulusframes = [1= background_green, ret_monster3, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9,
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9]
+/ validresponse = (huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9)
+/ correctresponse = (huegel6)
+/ responsemessage = (huegel1, ret_pos1_border, values.login_time)
+/ responsemessage = (huegel2, ret_pos2_border, values.login_time)
+/ responsemessage = (huegel3, ret_pos3_border, values.login_time)
+/ responsemessage = (huegel4, ret_pos4_border, values.login_time)
+/ responsemessage = (huegel5, ret_pos5_border, values.login_time)
+/ responsemessage = (huegel6, ret_pos6_border, values.login_time)
+/ responsemessage = (huegel7, ret_pos7_border, values.login_time)
+/ responsemessage = (huegel8, ret_pos8_border, values.login_time)
+/ responsemessage = (huegel9, ret_pos9_border, values.login_time)
+</trial>
+
+*******************************************************************
+*** Blöcke*
+********************************************************************
+// Instruction load1 **********************************************
+<block block_instruction1>
+/ onblockbegin = [
+	list.list_arrow.resetselection();
+	list.list_monster1.resetselection();
+	list.list_monster2.resetselection();
+	values.arrownum=0; values.monsternum1 = 0; values.monsternum2 = 0; values.retnum1 = 0; values.retnum2 = 0; values.retnum3 = 0;
+]
+/ trials = [1=sequence(trial_start, trial_learn_beispiel11, trial_learn_beispiel12, ret_beispiel1, trial_bereit)]
+/ branch = [
+	block.block_uebe11
+]
+</block>	
+// Uebung load1
+<block block_uebe11>
+/ trials = [1=sequence(trial_uebe11, trial_learn, ret_uebe11, trial_sonne_uebe1)]
+/ branch = [
+	block.block_uebe12
+]
+</block>	
+<block block_uebe12>
+/ trials = [1=sequence(trial_uebe12, trial_learn, trial_learn, ret_uebe12, trial_bereit1)]
+/ branch = [
+	block.block_instruction2
+]
+</block>	
+
+// Instruction load2 **********************************************
+<block block_instruction2>
+/ trials = [1=sequence(trial_beispiel2, trial_learn_beispiel21, trial_learn_beispiel22, ret_beispiel2_1, ret_beispiel2_2, trial_bereit2)]
+/ branch = [
+	block.block_uebe21
+]
+</block>	
+
+// Uebung load2
+<block block_uebe21>
+/ trials = [1=sequence(trial_uebe21, trial_learn, trial_learn, ret_uebe21_1, ret_uebe21_2, trial_question)]
+/ branch = [
+	if (trial.trial_question.response =="back"){
+		block.block_instruction1;
+	} else {
+		block.block_load1_3a
+	}
+]
+</block>	
+
+// Test ************************************************************
+<block block_load1_3a>
+/ trials = [1=sequence(trial_sonne, trial_load1_3a, 
+trial_learn, trial_learn, 
+trial_learn, 
+ret_load1_3a, trial_sonne)]
+/ branch = [
+	block.block_load1_3b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load1_3b>
+/ trials = [1=sequence(trial_load1_3b, 
+trial_learn, trial_learn, 
+trial_learn, 
+ret_load1_3b, belohnung1)]
+/ branch = [
+	block.block_load2_4a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_4a>
+/ trials = [1=sequence(trial_sonne, trial_load2_4a, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_4a_1, ret_load2_4a_2, trial_sonne)]
+/ branch = [
+	block.block_load2_4b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_4b>
+/ trials = [1=sequence(trial_load2_4b, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_4b_1, ret_load2_4b_2, trial_sonne)]
+/ branch = [
+	block.block_load2_5a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_5a>
+/ trials = [1=sequence(trial_load2_5a, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn,  
+ret_load2_5a_1, ret_load2_5a_2, 
+trial_sonne)]
+/ branch = [
+	block.block_load2_5b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_5b>
+/ trials = [1=sequence(trial_load2_5b, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_5b_1,ret_load2_5b_2, trial_sonne)]
+/ branch = [
+	block.block_load2_6a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_6a>
+/ trials = [1=sequence(trial_load2_6a, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_6a_1, ret_load2_6a_2, trial_sonne)]
+/ branch = [
+	block.block_load2_6b
+]
+/ onblockend = [
+	values.stopscript += 1
+]</block>	
+<block block_load2_6b>
+/ trials = [1=sequence(trial_load2_6b, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_6b_1, ret_load2_6b_2, trial_sonne)]
+/ branch = [
+	block.block_load2_7a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_7a>
+/ trials = [1=sequence(trial_load2_7a, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_7a_1, ret_load2_7a_2, trial_sonne)]
+/ branch = [
+	block.block_load2_7b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load2_7b>
+/ trials = [1=sequence(trial_load2_7b, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+trial_learn, trial_learn, 
+ret_load2_7b_1, ret_load2_7b_2, belohnung2)]
+/ branch = [
+	block.block_load3_1a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load3_1a>
+/ trials = [1=sequence(trial_sonne, trial_load3_1a, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_1a_1, ret_load3_1a_2, ret_load3_1a_3, trial_sonne)]
+/ branch = [
+	block.block_load3_1b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>	
+<block block_load3_1b>
+/ trials = [1=sequence(trial_load3_1b, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_1b_1, ret_load3_1b_2, ret_load3_1b_3, trial_sonne)]
+/ branch = [
+	block.block_load3_2a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_2a>
+/ trials = [1=sequence(trial_load3_2a, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_2a_1, ret_load3_2a_2, ret_load3_2a_3, trial_sonne)]
+/ branch = [
+	block.block_load3_2b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+<block block_load3_2b>
+/ trials = [1=sequence(trial_load3_2b, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_2b_1, ret_load3_2b_2, ret_load3_2b_3, trial_sonne)]
+/ branch = [
+	block.block_load3_3a
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+<block block_load3_3a>
+/ trials = [1=sequence(trial_load3_3a, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_3a_1, ret_load3_3a_2, ret_load3_3a_3, trial_sonne)]
+/ branch = [
+	block.block_load3_3b
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+<block block_load3_3b>
+/ trials = [1=sequence(trial_load3_3b, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+trial_learn, trial_learn, trial_learn, 
+ret_load3_3b_1, ret_load3_3b_2, ret_load3_3b_3, trial_sonne)]
+/ branch = [
+	block.block_end
+]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+
+<block block_end>
+/ trials = [1 = ende]
+/ bgstim = (background_green)
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+
+
+			
+***********************************
+          Experiment
+***********************************
+<expt>
+/ blocks = [1 = sequence (// Instruktion load1
+						  block_instruction1,
+						  // Uebung load1
+						  block_uebe11, block_uebe12, 
+						  // Instruktion load2
+						  block_instruction2,
+						  // Uebung load2
+						  block_uebe21,
+						  // TEST - load1
+						  block_load1_3a, block_load1_3b,
+						  // TEST - load2 (part 1)
+						  block_load2_4a, block_load2_4b, block_load2_5a, block_load2_5b, block_load2_6a, block_load2_6b, block_load2_7a, block_load2_7b,
+						  // TEST - load3 
+						  block_load3_1a, block_load3_1b, block_load3_2a, block_load3_2b, block_load3_3a, block_load3_3b, block_end
+						  )]
+/ stop = [
+	values.stopscript == 17 //blockend wird mitgezaehlt
+]
+/ onexptbegin = [
+    values.vpcode_hd1 = parameters.vpcode_hd2;
+]
+</expt>
+
+
+
+************ Trial to check out the screen ***************
+
+<trial allin>
+/ stimulustimes = [0=  background_green, picture_p2_down1, huegel1, huegel2, huegel3, huegel4, huegel5, huegel6, huegel7, huegel8, huegel9, speaker
+ Fz1, Fz2, Fz3,Fz4,Fz5,Fz6,Fz7,Fz8,Fz9, vor, back, learn_arrow, ret_monster1 ]
+/ response = anyresponse
+
+</trial>
+

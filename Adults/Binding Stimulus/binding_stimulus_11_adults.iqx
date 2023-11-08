@@ -1,0 +1,4799 @@
+﻿**************************************************************
+      BEFKI K-3 Binding Stimulus: 11+ (Adults)
+**************************************************************
+
+**************************************************************
+    Definition of recorded data 
+**************************************************************
+
+<data>
+/ columns = [date time subject blocknum blockcode trialnum trialcode response latency stimulus correct values.stimulus_presentation values.stopscript values.practice_correct]
+/ labels = TRUE
+</data>
+
+**************************************************************
+    Allgemeine aufgabenuebergreifende Features 
+**************************************************************
+
+<defaults>
+/ screencolor = transparent
+/ inputdevice = mouse
+</defaults>
+
+<values>
+/login_time=500
+/trial_duration=3500
+/trial_pre=500
+/trial_post=500
+/trial_timeout=3000
+/stimulus_presentation=3000
+/stopscript=0
+/practice_correct=0
+</values>
+
+**************************************************************
+						Stimuli 
+**************************************************************
+
+************************** Audios ****************************
+<video audio1>
+/ items = ("b1_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio2>
+/ items = ("b2_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio3>
+/ items = ("b3_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio4>
+/ items = ("b4_adult.mp3")
+/ playthrough = false
+</video>	
+
+<video audio5>
+/ items = ("b5_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio6_9>
+/ items = ("b6_9_adult.mp3") 
+/ playthrough = false
+</video>
+
+<video audio7>
+/ items = ("b7_adult.mp3")
+/ playthrough = false
+</video> 
+
+<video audio8>
+/ items = ("b8_adult.mp3")
+/ playthrough = false
+</video> 
+
+<video audio10>
+/ items = ("b10_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio11>
+/ items = ("b11_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio12>
+/ items = ("b12_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio13>
+/ items = ("b13_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio14>
+/ items = ("b14_adult.mp3")
+/ playthrough = false
+</video>
+
+<video audio_zwischenload>
+/ items = ("b_zwischen_loads_adult.mp3")
+/ playthrough = false
+</video>
+
+
+******************** Allgemeine Stimuli **********************
+
+<picture wallpaper>
+/ position = (50%, 50%)
+/ items = ("wallpaper_adult.PNG")
+/ size = (100%, 100%)
+/ erase = false
+</picture>
+
+<picture wallpaper_green>
+/ position = (50%, 50%)
+/ items = ("wallpaper_green_adult.PNG")
+/ size = (100%, 100%)
+/ erase = false
+</picture>
+
+<picture questionmark>
+/ position = (50%, 50%)
+/ items = ("questionmark.png")
+/ size = (50%, 50%)
+/ erase=false
+</picture>
+
+<picture wallpaper_red>
+/ position = (50%, 50%)
+/ items = ("wallpaper_red_adult.PNG")
+/ size = (100%, 100%)
+/ erase = false
+</picture>
+
+<item background_colors >
+/ 1 = "wallpaper_red_adult.PNG"
+/ 2 = "wallpaper_green_adult.PNG"
+</item>
+
+<picture background>
+/ position = (50%, 50%)
+/ items = background_colors
+/ size = (100%, 100%)
+/ erase = false
+</picture>
+
+<picture end>
+/ position = (50%, 50%)
+/ items = ("start.PNG")
+/ size = (40%, 40%)
+</picture>
+
+<picture back>
+/ position = (10%, 85%)
+/ items = ("pfeil_zurueck.PNG")
+/ size = (10%, 10%)
+/ erase = false
+</picture>
+
+<picture speaker>
+/ position = (90%, 15%)
+/ items = ("speaker.PNG")
+/ size = (12%, 12%)
+/ erase = false
+</picture>
+
+<shape no_speaker>
+/ shape = rectangle
+/ size = (15%, 15%)
+/ color = transparent
+/ position = (90%, 15%)
+/ erase = false
+</shape>
+
+<shape back_old>
+/ shape = rectangle
+/ size = (5%, 5%)
+/ color = orange
+/ position = (95%, 95%)
+</shape>
+
+<picture correct>
+/ position = (50%, 50%)
+/ items = ("smiley_yes_adult.PNG")
+/ size = (30%, 30%)
+/ erase = false
+</picture>
+
+<picture false>
+/ position = (50%, 50%)
+/ items = ("smiley_no_adult.PNG")
+/ size = (30%, 30%)
+/ erase = false
+</picture>
+
+<picture picture_achtung>
+/ position = (50%, 50%)
+/ items = ("start.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture arrow_forward>
+/ position = (90%, 85%)
+/ items = ("arrow_forward.PNG")
+/ size = (10%, 10%)
+/ erase = false
+</picture>
+
+<picture sun>
+/ position = (50%, 50%)
+/ items = ("sun_adult.PNG")
+/ size = (10%, 10%)
+/ erase = false
+</picture>
+
+<picture picture_start>
+/ position = (55%, 45%)
+/ items = ("start.PNG")
+/ size = (0%, 0%)
+/ erase = false
+</picture>
+
+<picture picture_confetti>
+/ position = (50%, 50%)
+/ items = ("confetti_adult.PNG")
+/ size = (30%, 30%)
+/ erase = false
+</picture>
+
+****************** Präsentation Geschenke ********************
+
+<picture learn_G1>
+/ position = (40%, 50%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G2>
+/ position = (40%, 50%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G3>
+/ position = (40%, 50%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G4>
+/ position = (40%, 50%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%))
+/ erase = false
+</picture>
+
+<picture learn_G5>
+/ position = (40%, 50%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G6>
+/ position = (40%, 50%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G7>
+/ position = (40%, 50%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture learn_G8>
+/ position = (40%, 50%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+
+********************* Abruf Geschenke ************************
+
+<picture zeige_G1>
+/ position = (50%, 50%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G2>
+/ position = (50%, 50%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G3>
+/ position = (50%, 50%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G4>
+/ position = (50%, 50%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G5>
+/ position = (50%, 50%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G6>
+/ position = (50%, 50%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G7>
+/ position = (50%, 50%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+<picture zeige_G8>
+/ position = (50%, 50%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+******************* Optionen Geschenke ***********************
+
+*********************Position 1 
+<picture ret_pos1_border>
+/ position = (14%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos1_G1>
+/ position = (14%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G2>
+/ position = (14%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G3>
+/ position = (14%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G4>
+/ position = (14%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G5>
+/ position = (14%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G6>
+/ position = (14%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G7>
+/ position = (14%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1_G8>
+/ position = (14%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 2
+<picture ret_pos2_border>
+/ position = (28%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos2_G1>
+/ position = (28%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G2>
+/ position = (28%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G3>
+/ position = (28%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G4>
+/ position = (28%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G5>
+/ position = (28%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G6>
+/ position = (28%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G7>
+/ position = (28%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2_G8>
+/ position = (28%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 3
+<picture ret_pos3_border>
+/ position = (42%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos3_G1>
+/ position = (42%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G2>
+/ position = (42%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G3>
+/ position = (42%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G4>
+/ position = (42%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G5>
+/ position = (42%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G6>
+/ position = (42%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G7>
+/ position = (42%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3_G8>
+/ position = (42%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 4
+<picture ret_pos4_border>
+/ position = (56%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos4_G1>
+/ position = (56%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G2>
+/ position = (56%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G3>
+/ position = (56%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G4>
+/ position = (56%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G5>
+/ position = (56%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G6>
+/ position = (56%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G7>
+/ position = (56%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4_G8>
+/ position = (56%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 5
+<picture ret_pos5_border>
+/ position = (70%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos5_G1>
+/ position = (70%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G2>
+/ position = (70%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G3>
+/ position = (70%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G4>
+/ position = (70%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G5>
+/ position = (70%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G6>
+/ position = (70%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G7>
+/ position = (70%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5_G8>
+/ position = (70%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 6
+<picture ret_pos6_border>
+/ position = (84%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos6_G1>
+/ position = (84%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G2>
+/ position = (84%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G3>
+/ position = (84%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G4>
+/ position = (84%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G5>
+/ position = (84%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G6>
+/ position = (84%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G7>
+/ position = (84%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos6_G8>
+/ position = (84%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 1x
+<picture ret_pos1x_border>
+/ position = (19.5%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos1x_G1>
+/ position = (19.5%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G2>
+/ position = (19.5%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G3>
+/ position = (19.5%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G4>
+/ position = (19.5%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G5>
+/ position = (19.5%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G6>
+/ position = (19.5%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G7>
+/ position = (19.5%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos1x_G8>
+/ position = (19.5%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 2x
+<picture ret_pos2x_border>
+/ position = (35%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos2x_G1>
+/ position = (35%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G2>
+/ position = (35%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G3>
+/ position = (35%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G4>
+/ position = (35%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G5>
+/ position = (35%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G6>
+/ position = (35%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G7>
+/ position = (35%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos2x_G8>
+/ position = (35%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 3x
+<picture ret_pos3x_border>
+/ position = (49%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos3x_G1>
+/ position = (49%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G2>
+/ position = (49%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G3>
+/ position = (49%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G4>
+/ position = (49%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G5>
+/ position = (49%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G6>
+/ position = (49%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G7>
+/ position = (49%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos3x_G8>
+/ position = (49%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 4x
+<picture ret_pos4x_border>
+/ position = (63%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos4x_G1>
+/ position = (63%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G2>
+/ position = (63%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G3>
+/ position = (63%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G4>
+/ position = (63%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G5>
+/ position = (63%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G6>
+/ position = (63%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G7>
+/ position = (63%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos4x_G8>
+/ position = (63%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+*********************Position 5x
+<picture ret_pos5x_border>
+/ position = (77%, 80%)
+/ items = ("border.PNG")
+/ size = (22%, 22%)
+/ erase = false
+</picture>
+
+<picture ret_pos5x_G1>
+/ position = (77%, 80%)
+/ items = ("g1_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G2>
+/ position = (77%, 80%)
+/ items = ("g2_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G3>
+/ position = (77%, 80%)
+/ items = ("g3_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G4>
+/ position = (77%, 80%)
+/ items = ("g4_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G5>
+/ position = (77%, 80%)
+/ items = ("g5_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G6>
+/ position = (77%, 80%)
+/ items = ("g6_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G7>
+/ position = (77%, 80%)
+/ items = ("g7_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+<picture ret_pos5x_G8>
+/ position = (77%, 80%)
+/ items = ("g8_adult.PNG")
+/ size = (15%, 15%)
+/ erase = false
+</picture>
+
+******************* Präsentation Monster *********************
+
+<picture learn_M1>
+/ position = (60%, 50%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M2>
+/ position = (60%, 50%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M3>
+/ position = (60%, 50%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M4>
+/ position = (60%, 50%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M5>
+/ position = (60%, 50%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M6>
+/ position = (60%, 50%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M7>
+/ position = (60%, 50%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture learn_M8>
+/ position = (60%, 50%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+********************** Abruf Monster *************************
+
+<picture zeige_M1>
+/ position = (50%, 50%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M2>
+/ position = (50%, 50%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%))
+/ erase = false
+</picture>
+
+<picture zeige_M3>
+/ position = (50%, 50%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M4>
+/ position = (50%, 50%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M5>
+/ position = (50%, 50%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M6>
+/ position = (50%, 50%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M7>
+/ position = (50%, 50%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture zeige_M8>
+/ position = (50%, 50%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+******************* Optionen Monster *************************
+
+*********************Position 1 
+<picture ret_pos1_M1>
+/ position = (14%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos1_M2>
+/ position = (14%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M3>
+/ position = (14%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M4>
+/ position = (14%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M5>
+/ position = (14%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M6>
+/ position = (14%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M7>
+/ position = (14%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1_M8>
+/ position = (14%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 2
+<picture ret_pos2_M1>
+/ position = (28%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos2_M2>
+/ position = (28%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M3>
+/ position = (28%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M4>
+/ position = (28%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M5>
+/ position = (28%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M6>
+/ position = (28%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M7>
+/ position = (28%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2_M8>
+/ position = (28%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 3
+<picture ret_pos3_M1>
+/ position = (42%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos3_M2>
+/ position = (42%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M3>
+/ position = (42%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M4>
+/ position = (42%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M5>
+/ position = (42%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M6>
+/ position = (42%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M7>
+/ position = (42%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3_M8>
+/ position = (42%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 4
+<picture ret_pos4_M1>
+/ position = (56%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos4_M2>
+/ position = (56%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4_M3>
+/ position = (56%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4_M4>
+/ position = (56%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%))
+/ erase = false
+</picture>
+<picture ret_pos4_M5>
+/ position = (56%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4_M6>
+/ position = (56%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4_M7>
+/ position = (56%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4_M8>
+/ position = (56%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 5
+<picture ret_pos5_M1>
+/ position = (70%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos5_M2>
+/ position = (70%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M3>
+/ position = (70%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M4>
+/ position = (70%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M5>
+/ position = (70%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M6>
+/ position = (70%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M7>
+/ position = (70%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5_M8>
+/ position = (70%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 6
+<picture ret_pos6_M1>
+/ position = (84%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos6_M2>
+/ position = (84%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M3>
+/ position = (84%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M4>
+/ position = (84%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M5>
+/ position = (84%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M6>
+/ position = (84%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M7>
+/ position = (84%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos6_M8>
+/ position = (84%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 1x
+<picture ret_pos1x_M1>
+/ position = (19.5%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos1x_M2>
+/ position = (19.5%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M3>
+/ position = (19.5%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M4>
+/ position = (19.5%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M5>
+/ position = (19.5%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M6>
+/ position = (19.5%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M7>
+/ position = (19.5%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos1x_M8>
+/ position = (19.5%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 2x
+<picture ret_pos2x_M1>
+/ position = (35%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos2x_M2>
+/ position = (35%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M3>
+/ position = (35%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M4>
+/ position = (35%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M5>
+/ position = (35%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M6>
+/ position = (35%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M7>
+/ position = (35%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos2x_M8>
+/ position = (35%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 3x
+<picture ret_pos3x_M1>
+/ position = (49%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos3x_M2>
+/ position = (49%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M3>
+/ position = (49%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M4>
+/ position = (49%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M5>
+/ position = (49%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M6>
+/ position = (49%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M7>
+/ position = (49%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos3x_M8>
+/ position = (49%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 4x
+<picture ret_pos4x_M1>
+/ position = (63%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos4x_M2>
+/ position = (63%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M3>
+/ position = (63%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M4>
+/ position = (63%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M5>
+/ position = (63%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M6>
+/ position = (63%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M7>
+/ position = (63%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos4x_M8>
+/ position = (63%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+*********************Position 5x
+<picture ret_pos5x_M1>
+/ position = (77%, 80%)
+/ items = ("m1_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+<picture ret_pos5x_M2>
+/ position = (77%, 80%)
+/ items = ("m2_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M3>
+/ position = (77%, 80%)
+/ items = ("m3_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M4>
+/ position = (77%, 80%)
+/ items = ("m4_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M5>
+/ position = (77%, 80%)
+/ items = ("m5_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M6>
+/ position = (77%, 80%)
+/ items = ("m6_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M7>
+/ position = (77%, 80%)
+/ items = ("m7_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+<picture ret_pos5x_M8>
+/ position = (77%, 80%)
+/ items = ("m8_adult.PNG")
+/ size = (20%, 20%)
+/ erase = false
+</picture>
+
+**************************************************************
+						Instruktionen 
+**************************************************************
+
+********************* Beispieltrial **************************
+<trial achtung_bsp>  
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, arrow_forward, audio1, speaker; 7500=wallpaper, arrow_forward, no_speaker]
+/ responsetrial = ("arrow_forward", trial.learn_bsp2_1_1)
+/ beginresponsetime = 7500
+</trial> 
+
+/ stimulusframes = [1=wallpaper, arrow_forward, audio1, speaker]
+
+********************************************learn_bsp2_1
+
+<trial learn_bsp2_1_1 >
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes = [0=wallpaper, learn_G1, learn_M1, arrow_forward, audio2, speaker; 7500=wallpaper, learn_G1, learn_M1, arrow_forward, no_speaker]
+/ responsetrial = ("arrow_forward", trial.learn_bsp2_1_2)
+/ beginresponsetime = 7500
+</trial>
+
+<trial learn_bsp2_1_2 >
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes= [0=wallpaper, learn_G2, learn_M2, arrow_forward, audio3, speaker; 6200=wallpaper, learn_G2, learn_M2, arrow_forward, no_speaker ]
+/ responsetrial = ("arrow_forward", trial.ret_bsp2_1_1)
+/ beginresponsetime = 6200
+</trial>
+
+*********************************************ret_bsp2_1	
+<trial ret_bsp2_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G1, ret_pos3_G2)
+/ correctresponse = (ret_pos4_G1)
+/ stimulustimes = [0= wallpaper, zeige_M1, ret_pos4_G1, ret_pos3_G2, audio4, speaker; 9500=audio5, speaker; 15000=wallpaper, zeige_M1, ret_pos4_G1, ret_pos3_G2, no_speaker]
+/ responsetrial = ("ret_pos4_G1", trial.correct_ret1)
+/ responsetrial = ("ret_pos3_G2", trial.false_ret1)
+/ beginresponsetime = 15000
+</trial>
+
+<trial correct_ret1>  
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, correct, arrow_forward, back, ret_pos4_G1, ret_pos3_G2, ret_pos4_border, audio6_9, speaker; 1500 = wallpaper, correct, arrow_forward, back, ret_pos4_G1, ret_pos3_G2, ret_pos4_border, no_speaker]
+/ responsetrial = ("arrow_forward", trial.ret_bsp2_1_2)
+/ responsetrial = ("back", trial.learn_bsp2_1_1)
+/ beginresponsetime = 1500
+</trial>
+
+<trial false_ret1>  
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, false, arrow_forward, back, ret_pos4_G1, ret_pos3_G2, ret_pos3_border, audio6_9, speaker; 1500= wallpaper, false, arrow_forward, back, ret_pos4_G1, ret_pos3_G2, ret_pos3_border, no_speaker]
+/ responsetrial = ("arrow_forward", trial.ret_bsp2_1_2)
+/ responsetrial = ("back", trial.learn_bsp2_1_1)
+/ beginresponsetime = 1500
+</trial>
+
+<trial ret_bsp2_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M1, ret_pos4_M2)
+/ correctresponse = (ret_pos4_M2)
+/ stimulustimes = [0= wallpaper, zeige_G2, ret_pos3_M1, ret_pos4_M2, audio7, speaker; 7500= wallpaper, zeige_G2, ret_pos3_M1, ret_pos4_M2, no_speaker]
+/ responsetrial = ("ret_pos4_M2", trial.correct_ret2)
+/ responsetrial = ("ret_pos3_M1", trial.false_ret2)
+/ beginresponsetime = 7500
+</trial>
+
+<trial correct_ret2>  
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes = [0=wallpaper, correct, arrow_forward, back,ret_pos3_M1, ret_pos4_M2, ret_pos4_border, audio6_9, speaker; 1500 = wallpaper, correct, arrow_forward, back,ret_pos3_M1, ret_pos4_M2, ret_pos4_border, no_speaker]
+/ responsetrial = ("arrow_forward", trial.trial_bereit)
+/ responsetrial = ("back", trial.learn_bsp2_1_1)
+/ beginresponsetime = 1500
+</trial>
+
+<trial false_ret2>
+/ pretrialpause = 300
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes = [0=wallpaper, false, arrow_forward, back,ret_pos3_M1, ret_pos4_M2, ret_pos3_border, speaker, audio6_9; 1500= wallpaper, false, arrow_forward, back,ret_pos3_M1, ret_pos4_M2, ret_pos3_border, no_speaker]
+/ responsetrial = ("arrow_forward", trial.trial_bereit)
+/ responsetrial = ("back", trial.learn_bsp2_1_1)
+/ beginresponsetime = 1500
+</trial>
+
+<trial trial_bereit>
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, sun, arrow_forward, audio10, speaker; 11500 = wallpaper, sun, arrow_forward, no_speaker]
+// responsetrial = ("arrow_forward", block.block_uebe2_1)
+/ beginresponsetime = 11500
+</trial>
+
+
+********************** Achtung-Trials ************************
+
+<trial achtung>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture_achtung]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m1>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m2>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m2_p>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+/ branch = [
+	trial.learn_uebe2_2_1
+]
+</trial>
+
+<trial achtung_m3>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m4>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m4_p>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+/ branch = [
+	trial.learn_uebe3_1_1
+]
+</trial>
+
+<trial achtung_m5>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m6>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m7>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+<trial achtung_m8>  
+/ pretrialpause = 300
+/ timeout = 2000
+/ stimulusframes = [1=wallpaper, picture.sun]
+/ posttrialpause = 500
+</trial>
+
+
+
+**************************************************************
+						Lerntrials
+**************************************************************
+
+*******************************************learn_uebe2_1
+<trial learn_uebe2_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G4, learn_M4; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.learn_uebe2_1_2
+]
+</trial>
+
+<trial learn_uebe2_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G1, learn_M7; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.ret_uebe2_1_2
+]
+</trial>
+
+*******************************************learn_uebe2_2
+<trial learn_uebe2_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G5, learn_M1; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.learn_uebe2_2_2
+]
+</trial>
+
+<trial learn_uebe2_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G6, learn_M2; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.ret_uebe2_2_2
+]
+</trial>
+
+<trial trial_bereit2>
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, arrow_forward, audio11, speaker; 10750= wallpaper, arrow_forward, no_speaker]
+/ beginresponsetime = 10750
+/ branch = [
+	trial.achtung_m4_p
+]
+</trial>
+
+*******************************************learn_uebe4_1
+<trial learn_uebe3_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G8, learn_M3; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.learn_uebe3_1_2
+]
+</trial>
+
+<trial learn_uebe3_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G2, learn_M5; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.learn_uebe3_1_3
+]
+</trial>
+
+<trial learn_uebe3_1_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G3, learn_M8; 3000=wallpaper]
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ branch = [
+	trial.ret_uebe3_1_2
+]
+</trial>
+
+********************************************learn_load2_1
+<trial learn_load2_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G6, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G7, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+*******************************************learn_load2_2
+<trial learn_load2_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G1, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G2, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_3
+<trial learn_load2_3_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_3_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_4
+<trial learn_load2_4_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_4_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_5
+<trial learn_load2_5_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_5_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_6
+<trial learn_load2_6_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_6_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_7
+<trial learn_load2_7_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_7_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load2_8
+<trial learn_load2_8_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load2_8_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load3_1
+<trial learn_load3_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper, learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_1_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load3_2
+<trial learn_load3_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_2_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load3_3
+<trial learn_load3_3_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_3_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_3_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load3_4
+<trial learn_load3_4_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_4_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_4_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load3_5
+<trial learn_load3_5_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_5_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_5_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load3_6
+<trial learn_load3_6_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_6_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_6_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load3_7
+<trial learn_load3_7_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_7_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_7_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load3_8
+<trial learn_load3_8_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_8_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load3_8_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load4_1
+<trial learn_load4_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_1_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_1_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load4_2
+<trial learn_load4_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_2_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_2_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load4_3
+<trial learn_load4_3_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_3_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_3_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_3_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load4_4
+<trial learn_load4_4_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_4_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_4_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_4_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load4_5
+<trial learn_load4_5_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_5_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_5_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_5_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load4_6
+<trial learn_load4_6_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_6_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_6_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load4_6_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load5_1
+<trial learn_load5_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_1_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_1_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_1_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load5_2
+<trial learn_load5_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_2_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_2_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_2_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load5_3
+<trial learn_load5_3_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_3_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_3_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_3_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_3_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load5_4
+<trial learn_load5_4_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_4_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_4_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_4_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_4_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+********************************************learn_load5_5
+<trial learn_load5_5_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_5_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_5_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_5_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_5_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load5_6
+<trial learn_load5_6_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_6_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_6_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_6_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load5_6_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load6_1
+<trial learn_load6_1_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_1_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_1_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_1_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_1_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_1_6 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load6_2
+<trial learn_load6_2_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_2_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_2_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G3, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_2_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_2_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_2_6 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load6_3
+<trial learn_load6_3_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_3_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_3_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G6, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_3_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M4; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_3_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M3; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_3_6 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+********************************************learn_load6_4
+<trial learn_load6_4_1 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G8, learn_M6; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_4_2 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G4, learn_M5; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_4_3 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G7, learn_M8; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_4_4 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G2, learn_M2; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_4_5 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G5, learn_M1; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+<trial learn_load6_4_6 >
+/ pretrialpause = values.trial_pre
+/ stimulustimes = [0=wallpaper,learn_G1, learn_M7; 3000=wallpaper]
+
+/ posttrialpause = values.trial_post
+/ timeout = values.trial_timeout
+</trial>
+
+
+**************************************************************
+						Abruftrials
+**************************************************************
+
+*********************************************ret_uebe2_1	
+<trial ret_uebe2_1_1>
+/ ontrialbegin = [
+	values.practice_correct=0
+]
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M4, ret_pos4_M7)
+/ correctresponse = (ret_pos3_M4)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos3_M4, ret_pos4_M7]
+/ correctmessage = (correct, 1000)
+/ errormessage = (false, 1000)
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe2_1_1.response=="ret_pos3_M4"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.achtung_m2_p
+]
+</trial>
+
+<trial ret_uebe2_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M4, ret_pos4_M7)
+/ correctresponse = (ret_pos4_M7)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos3_M4, ret_pos4_M7]
+/ correctmessage = (correct, 1000)
+/ errormessage = (false, 1000)
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe2_1_2.response=="ret_pos4_M7"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.ret_uebe2_1_1
+]
+</trial>
+
+*********************************************ret_uebe2_2
+<trial ret_uebe2_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M1, ret_pos4_M2)
+/ correctresponse = (ret_pos3_M1)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos3_M1, ret_pos4_M2]
+/ correctmessage = (correct, 500)
+/ errormessage = (false, 500)
+/ responsemessage = (ret_pos3_M1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M2, ret_pos4_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe2_2_1.response=="ret_pos3_M1"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.trial_bereit2
+]
+
+</trial>
+<trial ret_uebe2_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_G5, ret_pos4_G6)
+/ correctresponse = (ret_pos4_G6)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos3_G5, ret_pos4_G6]
+/ correctmessage = (correct, 500)
+/ errormessage = (false, 500)
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe2_2_2.response=="ret_pos4_G6"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.ret_uebe2_2_1
+]
+</trial>
+
+*********************************************ret_uebe3_1
+<trial ret_uebe3_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4x_M3, ret_pos2x_M5, ret_pos3x_M8)
+/ correctresponse = (ret_pos4x_M3)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos4x_M3, ret_pos2x_M5, ret_pos3x_M8]
+/ correctmessage = (correct, 500)
+/ errormessage = (false, 500)
+/ responsemessage = (ret_pos2x_M5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M3, ret_pos4x_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe3_1_1.response=="ret_pos4x_M3"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+		if(values.practice_correct==7)
+	{
+		trial.trial_stop_correct
+	}
+	else
+	{
+		trial.trial_stop_false
+	}
+]
+</trial>
+
+<trial ret_uebe3_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3x_G2, ret_pos2x_G8, ret_pos4x_G3)
+/ correctresponse = (ret_pos3x_G2)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos3x_G2, ret_pos2x_G8, ret_pos4x_G3]
+/ correctmessage = (correct, 500)
+/ errormessage = (false, 500)
+/ responsemessage = (ret_pos2x_G8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G3, ret_pos4x_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe3_1_2.response=="ret_pos3x_G2"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.ret_uebe3_1_3
+]
+</trial>
+
+<trial ret_uebe3_1_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3x_G3, ret_pos2x_G8, ret_pos4x_G2)
+/ correctresponse = (ret_pos3x_G3)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos3x_G3, ret_pos2x_G8, ret_pos4x_G2]
+/ correctmessage = (correct, 500)
+/ errormessage = (false, 500)
+/ responsemessage = (ret_pos2x_G8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G2, ret_pos4x_border, values.login_time)
+/ ontrialend = [
+	if(trial.ret_uebe3_1_3.response=="ret_pos3x_G3"){
+		values.practice_correct += 1
+	}
+]
+/ branch = [
+	trial.ret_uebe3_1_1
+]
+</trial>
+
+<trial trial_stop_correct>
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes = [0=wallpaper_green, questionmark, arrow_forward, back, audio12, speaker; 8750=audio13, speaker; 26750=arrow_forward, back, no_speaker ]
+/ beginresponsetime = 26750
+/ branch = [
+	if (trial.trial_stop_correct.response=="back"){
+		trial.learn_uebe2_1_1
+	}
+]
+</trial>
+
+<trial trial_stop_false>
+/ inputdevice = mouse
+/ validresponse = (arrow_forward, back)
+/ stimulustimes = [0=wallpaper_red, questionmark, arrow_forward, back, audio12, speaker; 8750=audio13, speaker; 26750=arrow_forward, back, no_speaker]
+/ beginresponsetime = 26750
+/ branch = [
+	if (trial.trial_stop_false.response=="back"){
+		trial.learn_uebe2_1_1
+	}
+]
+</trial>
+
+*********************************************ret_load2_1	
+<trial ret_load2_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G6, ret_pos3_G7)
+/ correctresponse = (ret_pos4_G6)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos4_G6, ret_pos3_G7]
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos3_G7, ret_pos3_border, values.login_time)
+</trial>
+<trial ret_load2_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M2, ret_pos4_M6)
+/ correctresponse = (ret_pos3_M2)
+/ stimulusframes = [1= wallpaper, zeige_G7, ret_pos3_M2, ret_pos4_M6]
+/ responsemessage = (ret_pos3_M2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_2
+<trial ret_load2_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M3, ret_pos4_M4)
+/ correctresponse = (ret_pos3_M3)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos3_M3, ret_pos4_M4]
+/ responsemessage = (ret_pos3_M3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M4, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G2, ret_pos3_G1)
+/ correctresponse = (ret_pos4_G2)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos4_G2, ret_pos3_G1]
+/ responsemessage = (ret_pos3_G1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_3
+<trial ret_load2_3_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_M6, ret_pos3_M8)
+/ correctresponse = (ret_pos4_M6)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos4_M6, ret_pos3_M8]
+/ responsemessage = (ret_pos3_M8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_3_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_G5, ret_pos4_G8)
+/ correctresponse = (ret_pos3_G5)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos3_G5, ret_pos4_G8]
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G8, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_4
+<trial ret_load2_4_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_G6, ret_pos4_G1)
+/ correctresponse = (ret_pos3_G6)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos3_G6, ret_pos4_G1]
+/ responsemessage = (ret_pos3_G6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G1, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_4_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G1, ret_pos3_G6)
+/ correctresponse = (ret_pos4_G1)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos4_G1, ret_pos3_G6]
+/ responsemessage = (ret_pos3_G6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G1, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_5
+<trial ret_load2_5_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_M5, ret_pos3_M8)
+/ correctresponse = (ret_pos4_M5)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos4_M5, ret_pos3_M8]
+/ responsemessage = (ret_pos3_M8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M5, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_5_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M8, ret_pos4_M5)
+/ correctresponse = (ret_pos3_M8)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos3_M8, ret_pos4_M5]
+/ responsemessage = (ret_pos3_M8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M5, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_6
+<trial ret_load2_6_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_G3, ret_pos4_G5)
+/ correctresponse = (ret_pos3_G3)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos3_G3, ret_pos4_G5]
+/ responsemessage = (ret_pos3_G3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_6_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_M4, ret_pos3_M7)
+/ correctresponse = (ret_pos4_M4)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos4_M4, ret_pos3_M7]
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_7
+<trial ret_load2_7_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G1, ret_pos3_G2)
+/ correctresponse = (ret_pos4_G1)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos4_G1, ret_pos3_G2]
+/ responsemessage = (ret_pos3_G2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G1, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_7_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_M5, ret_pos4_M3)
+/ correctresponse = (ret_pos3_M5)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos3_M5, ret_pos4_M3]
+/ responsemessage = (ret_pos3_M5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load2_8
+<trial ret_load2_8_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos3_G5, ret_pos4_G8)
+/ correctresponse = (ret_pos3_G5)
+/ stimulusframes = [1= wallpaper, zeige_M1, ret_pos3_G5, ret_pos4_G8]
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G8, ret_pos4_border, values.login_time)
+</trial>
+<trial ret_load2_8_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos4_G8, ret_pos3_G5)
+/ correctresponse = (ret_pos4_G8)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos4_G8, ret_pos3_G5]
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G8, ret_pos4_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_1	
+<trial ret_load3_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M2, ret_pos3x_M6, ret_pos4x_M3)
+/ correctresponse = (ret_pos2x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos2x_M2, ret_pos3x_M6, ret_pos4x_M3]
+/ responsemessage = (ret_pos2x_M2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M3, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M2, ret_pos3x_M6, ret_pos4x_M3)
+/ correctresponse = (ret_pos3x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos2x_M2, ret_pos3x_M6, ret_pos4x_M3]
+/ responsemessage = (ret_pos2x_M2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M3, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_1_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G5, ret_pos3x_G4, ret_pos4x_G8)
+/ correctresponse = (ret_pos4x_G8)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos2x_G5, ret_pos3x_G4, ret_pos4x_G8]
+/ responsemessage = (ret_pos2x_G5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G8, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_2
+<trial ret_load3_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M8, ret_pos3x_M6, ret_pos4x_M2)
+/ correctresponse = (ret_pos2x_M8)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos2x_M8, ret_pos3x_M6, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G6, ret_pos3x_G7, ret_pos4x_G3)
+/ correctresponse = (ret_pos4x_G3)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos2x_G6, ret_pos3x_G7, ret_pos4x_G3]
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G3, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_2_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G6, ret_pos3x_G7, ret_pos4x_G3)
+/ correctresponse = (ret_pos3x_G7)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos2x_G6, ret_pos3x_G7, ret_pos4x_G3]
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G3, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_3
+<trial ret_load3_3_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G1, ret_pos3x_G5, ret_pos4x_G4)
+/ correctresponse = (ret_pos2x_G1)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos2x_G1, ret_pos3x_G5, ret_pos4x_G4]
+/ responsemessage = (ret_pos2x_G1, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = ( ret_pos4x_G4, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_3_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M7, ret_pos3x_M5, ret_pos4x_M3)
+/ correctresponse = (ret_pos3x_M5)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos2x_M7, ret_pos3x_M5, ret_pos4x_M3]
+/ responsemessage = (ret_pos2x_M7, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M5, ret_pos3x_border, values.login_time)
+/ responsemessage = ( ret_pos4x_M3, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_3_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M7, ret_pos3x_M5, ret_pos4x_M3)
+/ correctresponse = (ret_pos4x_M3)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos2x_M7, ret_pos3x_M5, ret_pos4x_M3]
+/ responsemessage = (ret_pos2x_M7, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M5, ret_pos3x_border, values.login_time)
+/ responsemessage = ( ret_pos4x_M3, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_4	
+<trial ret_load3_4_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M6, ret_pos3x_M2, ret_pos4x_M7)
+/ correctresponse = (ret_pos2x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G7, ret_pos2x_M6, ret_pos3x_M2, ret_pos4x_M7]
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M7, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_4_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M6, ret_pos3x_M7, ret_pos4x_M2)
+/ correctresponse = (ret_pos4x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos2x_M6, ret_pos3x_M7, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_4_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M6, ret_pos3x_M7, ret_pos4x_M2)
+/ correctresponse = (ret_pos3x_M7)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos2x_M6, ret_pos3x_M7, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_5	
+<trial ret_load3_5_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M1, ret_pos3x_M4, ret_pos4x_M8)
+/ correctresponse = (ret_pos2x_M1)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos2x_M1, ret_pos3x_M4, ret_pos4x_M8]
+/ responsemessage = (ret_pos2x_M1, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M8, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_5_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M1, ret_pos3x_M4, ret_pos4x_M8)
+/ correctresponse = (ret_pos3x_M4)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos2x_M1, ret_pos3x_M4, ret_pos4x_M8]
+/ responsemessage = (ret_pos2x_M1, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M8, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_5_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G6, ret_pos3x_G2, ret_pos4x_G4)
+/ correctresponse = (ret_pos4x_G4)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos2x_G6, ret_pos3x_G2, ret_pos4x_G4]
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_G2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G4, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_6	
+<trial ret_load3_6_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G5, ret_pos3x_G1, ret_pos4x_G2)
+/ correctresponse = (ret_pos2x_G5)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos2x_G5, ret_pos3x_G1, ret_pos4x_G2]
+/ responsemessage = (ret_pos2x_G5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G1, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G2, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_6_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M3, ret_pos3x_M7, ret_pos4x_M2)
+/ correctresponse = (ret_pos4x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos2x_M3, ret_pos3x_M7, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M3, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_6_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M3, ret_pos3x_M7, ret_pos4x_M2)
+/ correctresponse = (ret_pos3x_M7)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos2x_M3, ret_pos3x_M7, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M3, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_7
+<trial ret_load3_7_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M4, ret_pos3x_M1, ret_pos4x_M6)
+/ correctresponse = (ret_pos3x_M1)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos2x_M4, ret_pos3x_M1, ret_pos4x_M6]
+/ responsemessage = (ret_pos2x_M4, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M1, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M6, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_7_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G6, ret_pos3x_G4, ret_pos4x_G7)
+/ correctresponse = (ret_pos4x_G7)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos2x_G6, ret_pos3x_G4, ret_pos4x_G7]
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_G4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G7, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_7_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M6, ret_pos3x_M4, ret_pos4x_M1)
+/ correctresponse = (ret_pos2x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos2x_M6, ret_pos3x_M4, ret_pos4x_M1]
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M1, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load3_8	
+<trial ret_load3_8_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G5, ret_pos3x_G3, ret_pos4x_G8)
+/ correctresponse = (ret_pos4x_G8)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos2x_G5, ret_pos3x_G3, ret_pos4x_G8]
+/ responsemessage = (ret_pos2x_G5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G8, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_8_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_M3, ret_pos3x_M5, ret_pos4x_M2)
+/ correctresponse = (ret_pos3x_M5)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos2x_M3, ret_pos3x_M5, ret_pos4x_M2]
+/ responsemessage = (ret_pos2x_M3, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_M5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+</trial>
+<trial ret_load3_8_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G8)
+/ correctresponse = (ret_pos2x_G3)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G8]
+/ responsemessage = (ret_pos2x_G3, ret_pos2x_border, values.login_time)
+/ responsemessage = ( ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G8, ret_pos4x_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_1	
+<trial ret_load4_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M7, ret_pos3_M6, ret_pos4_M2, ret_pos5_M4)
+/ correctresponse = (ret_pos4_M2)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos2_M7, ret_pos3_M6, ret_pos4_M2, ret_pos5_M4]
+/ responsemessage = (ret_pos2_M7, ret_pos2_border, values.login_time)
+/ responsemessage = ( ret_pos3_M6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M7, ret_pos3_M2, ret_pos4_M6, ret_pos5_M4)
+/ correctresponse = (ret_pos2_M7)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos2_M7, ret_pos3_M2, ret_pos4_M6, ret_pos5_M4]
+/ responsemessage = (ret_pos2_M7, ret_pos2_border, values.login_time)
+/ responsemessage = ( ret_pos3_M2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_1_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M2, ret_pos3_M7, ret_pos4_M4, ret_pos5_M6)
+/ correctresponse = (ret_pos5_M6)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos2_M2, ret_pos3_M7, ret_pos4_M4, ret_pos5_M6]
+/ responsemessage = (ret_pos2_M2, ret_pos2_border, values.login_time)
+/ responsemessage = ( ret_pos3_M7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M6, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_1_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G1, ret_pos3_G5, ret_pos4_G2, ret_pos5_G4)
+/ correctresponse = (ret_pos3_G5)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos2_G1, ret_pos3_G5, ret_pos4_G2, ret_pos5_G4]
+/ responsemessage = (ret_pos2_G1, ret_pos2_border, values.login_time)
+/ responsemessage = ( ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G4, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_2	
+<trial ret_load4_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1)
+/ correctresponse = (ret_pos2_M8)
+/ stimulusframes = [1= wallpaper, zeige_G7, ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1]
+/ responsemessage = (ret_pos2_M8, ret_pos2_border, values.login_time)
+/ responsemessage = (  ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M1, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1)
+/ correctresponse = (ret_pos3_M4)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1]
+/ responsemessage = (ret_pos2_M8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M1, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_2_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G7, ret_pos3_G3, ret_pos4_G5, ret_pos5_G6)
+/ correctresponse = (ret_pos4_G5)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos2_G7, ret_pos3_G3, ret_pos4_G5, ret_pos5_G6]
+/ responsemessage = (ret_pos2_G7, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G6, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_2_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1)
+/ correctresponse = (ret_pos5_M1)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos2_M8, ret_pos3_M4, ret_pos4_M3, ret_pos5_M1]
+/ responsemessage = (ret_pos2_M8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M1, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_3
+<trial ret_load4_3_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G8, ret_pos3_G1, ret_pos4_G2, ret_pos5_G4)
+/ correctresponse = (ret_pos4_G2)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos2_G8, ret_pos3_G1, ret_pos4_G2, ret_pos5_G4]
+/ responsemessage = (ret_pos2_G8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G4, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_3_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M3, ret_pos3_M2, ret_pos4_M7, ret_pos5_M4)
+/ correctresponse = (ret_pos2_M3)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos2_M3, ret_pos3_M2, ret_pos4_M7, ret_pos5_M4]
+/ responsemessage = (ret_pos2_M3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_3_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G2, ret_pos3_G8, ret_pos4_G4, ret_pos5_G6)
+/ correctresponse = (ret_pos5_G6)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos2_G2, ret_pos3_G8, ret_pos4_G4, ret_pos5_G6]
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G6, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_3_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G2, ret_pos3_G4, ret_pos4_G8, ret_pos5_G1)
+/ correctresponse = (ret_pos3_G4)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos2_G2, ret_pos3_G4, ret_pos4_G8, ret_pos5_G1]
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G8, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G1, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_4
+<trial ret_load4_4_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M8, ret_pos3_M6, ret_pos4_M2, ret_pos5_M7)
+/ correctresponse = (ret_pos2_M8)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos2_M8, ret_pos3_M6, ret_pos4_M2, ret_pos5_M7]
+/ responsemessage = (ret_pos2_M8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M7, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_4_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2)
+/ correctresponse = (ret_pos3_G5)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_4_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2)
+/ correctresponse = (ret_pos4_G6)
+/ stimulusframes = [1= wallpaper, zeige_M1, ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_4_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2)
+/ correctresponse = (ret_pos5_G2)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos2_G3, ret_pos3_G5, ret_pos4_G6, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_5
+<trial ret_load4_5_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G6, ret_pos3_G8, ret_pos4_G7, ret_pos5_G4)
+/ correctresponse = (ret_pos4_G7)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos2_G6, ret_pos3_G8, ret_pos4_G7, ret_pos5_G4]
+/ responsemessage = (ret_pos2_G6, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G7, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G4, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_5_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M5, ret_pos3_M4, ret_pos4_M2, ret_pos5_M8)
+/ correctresponse = (ret_pos2_M5)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos2_M5, ret_pos3_M4, ret_pos4_M2, ret_pos5_M8]
+/ responsemessage = (ret_pos2_M5, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M8, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_5_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G7, ret_pos3_G6, ret_pos4_G4, ret_pos5_G8)
+/ correctresponse = (ret_pos5_G8)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos2_G7, ret_pos3_G6, ret_pos4_G4, ret_pos5_G8]
+/ responsemessage = (ret_pos2_G7, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G8, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_5_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G7, ret_pos3_G4, ret_pos4_G6, ret_pos5_G8)
+/ correctresponse = (ret_pos3_G4)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos2_G7, ret_pos3_G4, ret_pos4_G6, ret_pos5_G8]
+/ responsemessage = (ret_pos2_G7, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G8, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load4_6
+<trial ret_load4_6_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_M5, ret_pos3_M7, ret_pos4_M3, ret_pos5_M6)
+/ correctresponse = (ret_pos2_M5)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos2_M5, ret_pos3_M7, ret_pos4_M3, ret_pos5_M6]
+/ responsemessage = (ret_pos2_M5, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M6, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_6_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2)
+/ correctresponse = (ret_pos3_G1)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_6_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2)
+/ correctresponse = (ret_pos4_G5)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+<trial ret_load4_6_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2)
+/ correctresponse = (ret_pos5_G2)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos2_G3, ret_pos3_G1, ret_pos4_G5, ret_pos5_G2]
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G1, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G2, ret_pos5_border, values.login_time)
+</trial>
+
+*********************************************ret_load5_1
+<trial ret_load5_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1)
+/ correctresponse = (ret_pos1x_M3)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M3, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1)
+/ correctresponse = (ret_pos2x_M8)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M3, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_1_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1)
+/ correctresponse = (ret_pos3x_M7)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos1x_M3, ret_pos2x_M8, ret_pos3x_M7, ret_pos4x_M5, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M3, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M7, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_1_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G2, ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G6, ret_pos5x_G7)
+/ correctresponse = (ret_pos4x_G6)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos1x_G2, ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G6, ret_pos5x_G7]
+/ responsemessage = (ret_pos1x_G2, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G3, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G6, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G7, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_1_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G2, ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G6, ret_pos5x_G7)
+/ correctresponse = (ret_pos5x_G7)
+/ stimulusframes = [1= wallpaper, zeige_M1, ret_pos1x_G2, ret_pos2x_G3, ret_pos3x_G5, ret_pos4x_G6, ret_pos5x_G7]
+/ responsemessage = (ret_pos1x_G2, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G3, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G6, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G7, ret_pos5x_border, values.login_time)
+</trial>
+
+
+*********************************************ret_load5_2
+<trial ret_load5_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M4, ret_pos2x_M6, ret_pos3x_M2, ret_pos4x_M3, ret_pos5x_M1)
+/ correctresponse = (ret_pos3x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos1x_M4, ret_pos2x_M6, ret_pos3x_M2, ret_pos4x_M3, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M4, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M3, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M2, ret_pos2x_M6, ret_pos3x_M3, ret_pos4x_M4, ret_pos5x_M1)
+/ correctresponse = (ret_pos4x_M4)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos1x_M2, ret_pos2x_M6, ret_pos3x_M3, ret_pos4x_M4, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M2, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M4, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_2_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G8, ret_pos2x_G5, ret_pos3x_G4, ret_pos4x_G1, ret_pos5x_G3)
+/ correctresponse = (ret_pos2x_G5)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos1x_G8, ret_pos2x_G5, ret_pos3x_G4, ret_pos4x_G1, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G8, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_2_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M3, ret_pos2x_M2, ret_pos3x_M4, ret_pos4x_M6, ret_pos5x_M1)
+/ correctresponse = (ret_pos1x_M3)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos1x_M3, ret_pos2x_M2, ret_pos3x_M4, ret_pos4x_M6, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M3, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M6, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_2_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G8, ret_pos2x_G4, ret_pos3x_G5, ret_pos4x_G1, ret_pos5x_G3)
+/ correctresponse = (ret_pos5x_G3)
+/ stimulusframes = [1= wallpaper, zeige_M1, ret_pos1x_G8, ret_pos2x_G4, ret_pos3x_G5, ret_pos4x_G1, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G8, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G4, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+
+*********************************************ret_load5_3
+<trial ret_load5_3_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G5, ret_pos2x_G2, ret_pos3x_G8, ret_pos4x_G3, ret_pos5x_G6)
+/ correctresponse = (ret_pos5x_G6)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos1x_G5, ret_pos2x_G2, ret_pos3x_G8, ret_pos4x_G3, ret_pos5x_G6]
+/ responsemessage = (ret_pos1x_G5, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G3, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_3_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M5, ret_pos3x_M3, ret_pos4x_M4, ret_pos5x_M2)
+/ correctresponse = (ret_pos4x_M4)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos1x_M7, ret_pos2x_M5, ret_pos3x_M3, ret_pos4x_M4, ret_pos5x_M2]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M4, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M2, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_3_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G6, ret_pos2x_G2, ret_pos3x_G5, ret_pos4x_G8, ret_pos5x_G3)
+/ correctresponse = (ret_pos2x_G2)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos1x_G6, ret_pos2x_G2, ret_pos3x_G5, ret_pos4x_G8, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G6, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G8, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_3_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G6, ret_pos2x_G5, ret_pos3x_G8, ret_pos4x_G2, ret_pos5x_G3)
+/ correctresponse = (ret_pos3x_G8)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos1x_G6, ret_pos2x_G5, ret_pos3x_G8, ret_pos4x_G2, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G6, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G2, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_3_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M2, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M5, ret_pos5x_M3)
+/ correctresponse = (ret_pos1x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1x_M2, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M5, ret_pos5x_M3]
+/ responsemessage = (ret_pos1x_M2, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M7, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M3, ret_pos5x_border, values.login_time)
+</trial>
+
+*********************************************ret_load5_4
+<trial ret_load5_4_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G7, ret_pos2x_G4, ret_pos3x_G8, ret_pos4x_G1, ret_pos5x_G3)
+/ correctresponse = (ret_pos3x_G8)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos1x_G7, ret_pos2x_G4, ret_pos3x_G8, ret_pos4x_G1, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G4, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_4_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G8, ret_pos2x_G7, ret_pos3x_G4, ret_pos4x_G1, ret_pos5x_G3)
+/ correctresponse = (ret_pos2x_G7)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos1x_G8, ret_pos2x_G7, ret_pos3x_G4, ret_pos4x_G1, ret_pos5x_G3]
+/ responsemessage = (ret_pos1x_G8, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G7, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G3, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_4_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M1, ret_pos3x_M8, ret_pos4x_M2, ret_pos5x_M6)
+/ correctresponse = (ret_pos2x_M1)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos1x_M7, ret_pos2x_M1, ret_pos3x_M8, ret_pos4x_M2, ret_pos5x_M6]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M1, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_4_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M2, ret_pos3x_M8, ret_pos4x_M1, ret_pos5x_M6)
+/ correctresponse = (ret_pos2x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos1x_M7, ret_pos2x_M2, ret_pos3x_M8, ret_pos4x_M1, ret_pos5x_M6]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M2, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M8, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_4_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M8, ret_pos3x_M6, ret_pos4x_M1, ret_pos5x_M2)
+/ correctresponse = (ret_pos3x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1x_M7, ret_pos2x_M8, ret_pos3x_M6, ret_pos4x_M1, ret_pos5x_M2]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M2, ret_pos5x_border, values.login_time)
+</trial>
+
+*********************************************ret_load5_5
+<trial ret_load5_5_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M4, ret_pos3x_M2, ret_pos4x_M1, ret_pos5x_M6)
+/ correctresponse = (ret_pos1x_M7)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos1x_M7, ret_pos2x_M4, ret_pos3x_M2, ret_pos4x_M1, ret_pos5x_M6]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M4, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_5_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G1, ret_pos2x_G6, ret_pos3x_G2, ret_pos4x_G3, ret_pos5x_G8)
+/ correctresponse = (ret_pos1x_G1)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos1x_G1, ret_pos2x_G6, ret_pos3x_G2, ret_pos4x_G3, ret_pos5x_G8]
+/ responsemessage = (ret_pos1x_G1, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G3, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G8, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_5_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M4, ret_pos3x_M2, ret_pos4x_M1, ret_pos5x_M6)
+/ correctresponse = (ret_pos3x_M2)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos1x_M7, ret_pos2x_M4, ret_pos3x_M2, ret_pos4x_M1, ret_pos5x_M6]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M4, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M2, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M1, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_5_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M1, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M2, ret_pos5x_M6)
+/ correctresponse = (ret_pos1x_M1)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1x_M1, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M2, ret_pos5x_M6]
+/ responsemessage = (ret_pos1x_M1, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M7, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M6, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_5_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M6, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M2, ret_pos5x_M1)
+/ correctresponse = (ret_pos1x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos1x_M6, ret_pos2x_M7, ret_pos3x_M4, ret_pos4x_M2, ret_pos5x_M1]
+/ responsemessage = (ret_pos1x_M6, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M7, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M4, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M2, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M1, ret_pos5x_border, values.login_time)
+</trial>
+
+********************************************ret_load5_6
+<trial ret_load5_6_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M1, ret_pos2x_M6, ret_pos3x_M5, ret_pos4x_M7, ret_pos5x_M2)
+/ correctresponse = (ret_pos1x_M1)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos1x_M1, ret_pos2x_M6, ret_pos3x_M5, ret_pos4x_M7, ret_pos5x_M2]
+/ responsemessage = (ret_pos1x_M1, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M5, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M7, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M2, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_6_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M1, ret_pos2x_M5, ret_pos3x_M6, ret_pos4x_M7, ret_pos5x_M2)
+/ correctresponse = (ret_pos2x_M6)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1x_M1, ret_pos2x_M6, ret_pos3x_M5, ret_pos4x_M7, ret_pos5x_M2]
+/ responsemessage = (ret_pos1x_M1, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M5, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M7, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M2, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_6_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G8, ret_pos2x_G6, ret_pos3x_G3, ret_pos4x_G5, ret_pos5x_G2)
+/ correctresponse = (ret_pos2x_G6)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos1x_G8, ret_pos2x_G6, ret_pos3x_G3, ret_pos4x_G5, ret_pos5x_G2]
+/ responsemessage = (ret_pos1x_G8, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G6, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G2, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_6_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_M7, ret_pos2x_M1, ret_pos3x_M6, ret_pos4x_M5, ret_pos5x_M2)
+/ correctresponse = (ret_pos1x_M7)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos2x_M1, ret_pos3x_M6, ret_pos4x_M5, ret_pos1x_M7, ret_pos5x_M2]
+/ responsemessage = (ret_pos1x_M7, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_M1, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_M6, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_M5, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_M2, ret_pos5x_border, values.login_time)
+</trial>
+<trial ret_load5_6_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1x_G2, ret_pos2x_G8, ret_pos3x_G3, ret_pos4x_G6, ret_pos5x_G5)
+/ correctresponse = (ret_pos1x_G2)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos1x_G2, ret_pos2x_G8, ret_pos3x_G3, ret_pos4x_G6, ret_pos5x_G5]
+/ responsemessage = (ret_pos1x_G2, ret_pos1x_border, values.login_time)
+/ responsemessage = (ret_pos2x_G8, ret_pos2x_border, values.login_time)
+/ responsemessage = (ret_pos3x_G3, ret_pos3x_border, values.login_time)
+/ responsemessage = (ret_pos4x_G6, ret_pos4x_border, values.login_time)
+/ responsemessage = (ret_pos5x_G5, ret_pos5x_border, values.login_time)
+</trial>
+
+********************************************ret_load6_1
+<trial ret_load6_1_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M2, ret_pos2_M1, ret_pos3_M3, ret_pos4_M4, ret_pos5_M5, ret_pos6_M6)
+/ correctresponse = (ret_pos2_M1)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos1_M2, ret_pos2_M1, ret_pos3_M3, ret_pos4_M4, ret_pos5_M5, ret_pos6_M6]
+/ responsemessage = (ret_pos1_M2, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M1, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_1_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G3, ret_pos3_G4, ret_pos4_G2, ret_pos5_G5, ret_pos6_G6)
+/ correctresponse = (ret_pos4_G2)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos1_G1, ret_pos2_G3, ret_pos3_G4, ret_pos4_G2, ret_pos5_G5, ret_pos6_G6]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_1_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M3, ret_pos2_M1, ret_pos3_M2, ret_pos4_M4, ret_pos5_M5, ret_pos6_M6)
+/ correctresponse = (ret_pos1_M3)
+/ stimulusframes = [1= wallpaper, zeige_G3, ret_pos1_M3, ret_pos2_M1, ret_pos3_M2, ret_pos4_M4, ret_pos5_M5, ret_pos6_M6]
+/ responsemessage = (ret_pos1_M3, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M1, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_1_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G2, ret_pos3_G4, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6)
+/ correctresponse = (ret_pos3_G4)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos1_G1, ret_pos2_G2, ret_pos3_G4, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_1_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M1, ret_pos2_M2, ret_pos3_M5, ret_pos4_M3, ret_pos5_M4, ret_pos6_M6)
+/ correctresponse = (ret_pos3_M5)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos1_M1, ret_pos2_M2, ret_pos3_M5, ret_pos4_M3, ret_pos5_M4, ret_pos6_M6]
+/ responsemessage = (ret_pos1_M1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_1_6>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G2, ret_pos3_G3, ret_pos4_G4, ret_pos5_G6, ret_pos6_G5)
+/ correctresponse = (ret_pos5_G6)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos1_G1, ret_pos2_G2, ret_pos3_G3, ret_pos4_G4, ret_pos5_G6, ret_pos6_G5]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G6, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G5, ret_pos6_border, values.login_time)
+</trial>
+
+********************************************ret_load6_2
+<trial ret_load6_2_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M7, ret_pos2_M8, ret_pos3_M6, ret_pos4_M5, ret_pos5_M4, ret_pos6_M3)
+/ correctresponse = (ret_pos2_M8)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos1_M7, ret_pos2_M8, ret_pos3_M6, ret_pos4_M5, ret_pos5_M4, ret_pos6_M3]
+/ responsemessage = (ret_pos1_M7, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M3, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_2_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M8, ret_pos2_M6, ret_pos3_M7, ret_pos4_M5, ret_pos5_M4, ret_pos6_M3)
+/ correctresponse = (ret_pos3_M7)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos1_M8, ret_pos2_M6, ret_pos3_M7, ret_pos4_M5, ret_pos5_M4, ret_pos6_M3]
+/ responsemessage = (ret_pos1_M8, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M6, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M3, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_2_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G2, ret_pos3_G4, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6)
+/ correctresponse = (ret_pos4_G3)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos1_G1, ret_pos2_G2, ret_pos3_G4, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_2_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G4, ret_pos2_G1, ret_pos3_G2, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6)
+/ correctresponse = (ret_pos1_G4)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos1_G4, ret_pos2_G1, ret_pos3_G2, ret_pos4_G3, ret_pos5_G5, ret_pos6_G6]
+/ responsemessage = (ret_pos1_G4, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G1, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G3, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_2_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G2, ret_pos3_G3, ret_pos4_G4, ret_pos5_G5, ret_pos6_G6)
+/ correctresponse = (ret_pos5_G5)
+/ stimulusframes = [1= wallpaper, zeige_M4, ret_pos1_G1, ret_pos2_G2, ret_pos3_G3, ret_pos4_G4, ret_pos5_G5, ret_pos6_G6]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G6, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_2_6>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M8, ret_pos2_M3, ret_pos3_M7, ret_pos4_M6, ret_pos5_M5, ret_pos6_M4)
+/ correctresponse = (ret_pos2_M3)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos1_M8, ret_pos2_M3, ret_pos3_M7, ret_pos4_M6, ret_pos5_M5, ret_pos6_M4]
+/ responsemessage = (ret_pos1_M8, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M4, ret_pos6_border, values.login_time)
+</trial>
+
+********************************************ret_load6_3
+<trial ret_load6_3_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M5, ret_pos2_M3, ret_pos3_M2, ret_pos4_M7, ret_pos5_M6, ret_pos6_M4)
+/ correctresponse = (ret_pos4_M7)
+/ stimulusframes = [1= wallpaper, zeige_G4, ret_pos1_M5, ret_pos2_M3, ret_pos3_M2, ret_pos4_M7, ret_pos5_M6, ret_pos6_M4]
+/ responsemessage = (ret_pos1_M5, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M3, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M6, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M4, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_3_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G8, ret_pos2_G2, ret_pos3_G4, ret_pos4_G1, ret_pos5_G6, ret_pos6_G5)
+/ correctresponse = (ret_pos1_G8)
+/ stimulusframes = [1= wallpaper, zeige_M2, ret_pos1_G8, ret_pos2_G2, ret_pos3_G4, ret_pos4_G1, ret_pos5_G6, ret_pos6_G5]
+/ responsemessage = (ret_pos1_G8, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G1, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G6, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G5, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_3_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M6, ret_pos2_M2, ret_pos3_M5, ret_pos4_M7, ret_pos5_M4, ret_pos6_M3)
+/ correctresponse = (ret_pos3_M5)
+/ stimulusframes = [1= wallpaper, zeige_G6, ret_pos1_M6, ret_pos2_M2, ret_pos3_M5, ret_pos4_M7, ret_pos5_M4, ret_pos6_M3]
+/ responsemessage = (ret_pos1_M6, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M7, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M4, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M3, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_3_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M2, ret_pos2_M4, ret_pos3_M3, ret_pos4_M6, ret_pos5_M7, ret_pos6_M5)
+/ correctresponse = (ret_pos2_M4)
+/ stimulusframes = [1= wallpaper, zeige_G1, ret_pos1_M2, ret_pos2_M4, ret_pos3_M3, ret_pos4_M6, ret_pos5_M7, ret_pos6_M5]
+/ responsemessage = (ret_pos1_M2, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M4, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M3, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M7, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M5, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_3_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G4, ret_pos2_G8, ret_pos3_G5, ret_pos4_G2, ret_pos5_G6, ret_pos6_G1)
+/ correctresponse = (ret_pos3_G5)
+/ stimulusframes = [1= wallpaper, zeige_M3, ret_pos1_G4, ret_pos2_G8, ret_pos3_G5, ret_pos4_G2, ret_pos5_G6, ret_pos6_G1]
+/ responsemessage = (ret_pos1_G4, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G6, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G1, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_3_6>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G1, ret_pos2_G4, ret_pos3_G6, ret_pos4_G2, ret_pos5_G8, ret_pos6_G5)
+/ correctresponse = (ret_pos4_G2)
+/ stimulusframes = [1= wallpaper, zeige_M6, ret_pos1_G1, ret_pos2_G4, ret_pos3_G6, ret_pos4_G2, ret_pos5_G8, ret_pos6_G5]
+/ responsemessage = (ret_pos1_G1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G4, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G6, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G2, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G8, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G5, ret_pos6_border, values.login_time)
+</trial>
+
+********************************************ret_load6_4
+<trial ret_load6_4_1>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M8, ret_pos2_M2, ret_pos3_M5, ret_pos4_M1, ret_pos5_M6, ret_pos6_M7)
+/ correctresponse = (ret_pos5_M6)
+/ stimulusframes = [1= wallpaper, zeige_G8, ret_pos1_M8, ret_pos2_M2, ret_pos3_M5, ret_pos4_M1, ret_pos5_M6, ret_pos6_M7]
+/ responsemessage = (ret_pos1_M8, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M5, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M1, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M6, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M7, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_4_2>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G4, ret_pos2_G8, ret_pos3_G2, ret_pos4_G7, ret_pos5_G5, ret_pos6_G1)
+/ correctresponse = (ret_pos1_G4)
+/ stimulusframes = [1= wallpaper, zeige_M5, ret_pos1_G4, ret_pos2_G8, ret_pos3_G2, ret_pos4_G7, ret_pos5_G5, ret_pos6_G1]
+/ responsemessage = (ret_pos1_G4, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G8, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G2, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G7, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G1, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_4_3>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G5, ret_pos2_G2, ret_pos3_G7, ret_pos4_G4, ret_pos5_G1, ret_pos6_G8)
+/ correctresponse = (ret_pos3_G7)
+/ stimulusframes = [1= wallpaper, zeige_M8, ret_pos1_G5, ret_pos2_G2, ret_pos3_G7, ret_pos4_G4, ret_pos5_G1, ret_pos6_G8]
+/ responsemessage = (ret_pos1_G5, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G4, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G1, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G8, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_4_4>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M1, ret_pos2_M2, ret_pos3_M7, ret_pos4_M6, ret_pos5_M5, ret_pos6_M8)
+/ correctresponse = (ret_pos2_M2)
+/ stimulusframes = [1= wallpaper, zeige_G2, ret_pos1_M1, ret_pos2_M2, ret_pos3_M7, ret_pos4_M6, ret_pos5_M5, ret_pos6_M8]
+/ responsemessage = (ret_pos1_M1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M7, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M6, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M5, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M8, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_4_5>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_M1, ret_pos2_M6, ret_pos3_M8, ret_pos4_M5, ret_pos5_M7, ret_pos6_M2)
+/ correctresponse = (ret_pos1_M1)
+/ stimulusframes = [1= wallpaper, zeige_G5, ret_pos1_M1, ret_pos2_M6, ret_pos3_M8, ret_pos4_M5, ret_pos5_M7, ret_pos6_M2]
+/ responsemessage = (ret_pos1_M1, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_M6, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_M8, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_M5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_M7, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_M2, ret_pos6_border, values.login_time)
+</trial>
+<trial ret_load6_4_6>
+/ pretrialpause = values.trial_pre
+/ inputdevice = mouse
+/ validresponse = (ret_pos1_G8, ret_pos2_G2, ret_pos3_G4, ret_pos4_G5, ret_pos5_G7, ret_pos6_G1)
+/ correctresponse = (ret_pos6_G1)
+/ stimulusframes = [1= wallpaper, zeige_M7, ret_pos1_G8, ret_pos2_G2, ret_pos3_G4, ret_pos4_G5, ret_pos5_G7, ret_pos6_G1]
+/ responsemessage = (ret_pos1_G8, ret_pos1_border, values.login_time)
+/ responsemessage = (ret_pos2_G2, ret_pos2_border, values.login_time)
+/ responsemessage = (ret_pos3_G4, ret_pos3_border, values.login_time)
+/ responsemessage = (ret_pos4_G5, ret_pos4_border, values.login_time)
+/ responsemessage = (ret_pos5_G7, ret_pos5_border, values.login_time)
+/ responsemessage = (ret_pos6_G1, ret_pos6_border, values.login_time)
+</trial>
+
+
+**************************************************************
+					Blöcke (ab Übung) 
+**************************************************************
+
+<block block_uebe2_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(learn_uebe2_1_1)]
+/ responsemode = free
+</block>
+
+<block block_load2_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m3, learn_load2_1_1, learn_load2_1_2, ret_load2_1_1, ret_load2_1_2)]
+/ responsemode = free
+/ branch = [block.block_load2_2]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_2>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m7, learn_load2_2_1, learn_load2_2_2, ret_load2_2_2, ret_load2_2_1, party)]
+/ responsemode = free
+/ branch = [block.block_load3_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_3>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load2_3_1, learn_load2_3_2, ret_load2_3_1, ret_load2_3_2)]
+/ responsemode = free
+/ branch = [block.block_load2_4]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_4>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m6, learn_load2_4_1, learn_load2_4_2, ret_load2_4_2, ret_load2_4_1)]
+/ responsemode = free
+/ branch = [block.block_load2_5]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_5>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load2_5_1, learn_load2_5_2, ret_load2_5_1, ret_load2_5_2)]
+/ responsemode = free
+/ branch = [block.block_load2_6]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_6>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m6, learn_load2_6_1, learn_load2_6_2, ret_load2_6_2, ret_load2_6_1)]
+/ responsemode = free
+/ branch = [block.block_load2_7]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+
+<block block_load2_7>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m6, learn_load2_7_1, learn_load2_7_2, ret_load2_7_1, ret_load2_7_2)]
+/ responsemode = free
+/ branch = [block.block_load2_8]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load2_8>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m6, learn_load2_8_1, learn_load2_8_2, ret_load2_8_2, ret_load2_8_1)]
+/ responsemode = free
+/ branch = [block.block_load3_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load3_1_1, learn_load3_1_2, learn_load3_1_3, ret_load3_1_2, ret_load3_1_1, ret_load3_1_3)]
+/ responsemode = free
+/ branch = [block.block_load3_2]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_2>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m3, learn_load3_2_1, learn_load3_2_2, learn_load3_2_3, ret_load3_2_1, ret_load3_2_3, ret_load3_2_2)]
+/ responsemode = free
+/ branch = [block.block_load3_3]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_3>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m8, learn_load3_3_1, learn_load3_3_2, learn_load3_3_3, ret_load3_3_2, ret_load3_3_1, ret_load3_3_3, party)]
+/ responsemode = free
+/ branch = [block.block_load4_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_4>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m5, learn_load3_4_1, learn_load3_4_2, learn_load3_4_3, ret_load3_4_1, ret_load3_4_3, ret_load3_4_2)]
+/ responsemode = free
+/ branch = [block.block_load3_5]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_5>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m4, learn_load3_5_1, learn_load3_5_2, learn_load3_5_3, ret_load3_5_2, ret_load3_5_1, ret_load3_5_3)]
+/ responsemode = free
+/ branch = [block.block_load3_6]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_6>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m5, learn_load3_6_1, learn_load3_6_2, learn_load3_6_3, ret_load3_6_1, ret_load3_6_3, ret_load3_6_2)]
+/ responsemode = free
+/ branch = [block.block_load3_7]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_7>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m5, learn_load3_7_1, learn_load3_7_2, learn_load3_7_3, ret_load3_7_3, ret_load3_7_1, ret_load3_7_2)]
+/ responsemode = free
+/ branch = [block.block_load3_8]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load3_8>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m5, learn_load3_8_1, learn_load3_8_2, learn_load3_8_3, ret_load3_8_2, ret_load3_8_3, ret_load3_8_1)]
+/ responsemode = free
+/ branch = [block.block_load4_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load4_1_1, learn_load4_1_2, learn_load4_1_3, learn_load4_1_4, ret_load4_1_1, ret_load4_1_4, ret_load4_1_3, ret_load4_1_2)]
+/ responsemode = free
+/ branch = [block.block_load4_2]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_2>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m2, learn_load4_2_1, learn_load4_2_2, learn_load4_2_3, learn_load4_2_4, ret_load4_2_2, ret_load4_2_4, ret_load4_2_1, ret_load4_2_3)]
+/ responsemode = free
+/ branch = [block.block_load4_3]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_3>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m8, learn_load4_3_1, learn_load4_3_2, learn_load4_3_3, learn_load4_3_4, ret_load4_3_1, ret_load4_3_4, ret_load4_3_3, ret_load4_3_2)]
+/ responsemode = free
+/ branch = [block.block_load4_4]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_4>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m3, learn_load4_4_1, learn_load4_4_2, learn_load4_4_3, learn_load4_4_4, ret_load4_4_2, ret_load4_4_4, ret_load4_4_1, ret_load4_4_3, party)]
+/ responsemode = free
+/ branch = [block.block_load5_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_5>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m7, learn_load4_5_1, learn_load4_5_2, learn_load4_5_3, learn_load4_5_4, ret_load4_5_1, ret_load4_5_4, ret_load4_5_3, ret_load4_5_2)]
+/ responsemode = free
+/ branch = [block.block_load4_6]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load4_6>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load4_6_1, learn_load4_6_2, learn_load4_6_3, learn_load4_6_4, ret_load4_6_2, ret_load4_6_4, ret_load4_6_1, ret_load4_6_3)]
+/ responsemode = free
+/ branch = [block.block_load5_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_1_1, learn_load5_1_2, learn_load5_1_3, learn_load5_1_4, learn_load5_1_5,
+ ret_load5_1_3, ret_load5_1_4, ret_load5_1_5, ret_load5_1_1, ret_load5_1_2)]
+/ responsemode = free
+/ branch = [block.block_load5_2]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_2>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_2_1, learn_load5_2_2, learn_load5_2_3, learn_load5_2_4, learn_load5_2_5,
+ ret_load5_2_2, ret_load5_2_3, ret_load5_2_1, ret_load5_2_4, ret_load5_2_5)]
+/ responsemode = free
+/ branch = [block.block_load5_3]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_3>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_3_1, learn_load5_3_2, learn_load5_3_3, learn_load5_3_4, learn_load5_3_5,
+ ret_load5_3_3, ret_load5_3_4, ret_load5_3_5, ret_load5_3_1, ret_load5_3_2)]
+/ responsemode = free
+/ branch = [block.block_load5_4]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_4>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_4_1, learn_load5_4_2, learn_load5_4_3, learn_load5_4_4, learn_load5_4_5,
+ ret_load5_4_3, ret_load5_4_4, ret_load5_4_1, ret_load5_4_2, ret_load5_4_5)]
+/ responsemode = free
+/ branch = [block.block_load5_5]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_5>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_5_1, learn_load5_5_2, learn_load5_5_3, learn_load5_5_4, learn_load5_5_5,
+ ret_load5_5_2, ret_load5_5_1, ret_load5_5_3, ret_load5_5_4, ret_load5_5_5, party)]
+/ responsemode = free
+/ branch = [block.block_load6_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load5_6>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load5_6_1, learn_load5_6_2, learn_load5_6_3, learn_load5_6_4, learn_load5_6_5,
+ ret_load5_6_5, ret_load5_6_2, ret_load5_6_1, ret_load5_6_3, ret_load5_6_4)]
+/ responsemode = free
+/ branch = [block.block_load6_1]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load6_1>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load6_1_1, learn_load6_1_2, learn_load6_1_3, learn_load6_1_4, learn_load6_1_5, learn_load6_1_6,
+ ret_load6_1_1, ret_load6_1_2, ret_load6_1_3, ret_load6_1_4, ret_load6_1_5, ret_load6_1_6)]
+/ responsemode = free
+/ branch = [block.block_load6_2]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load6_2>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load6_2_1, learn_load6_2_2, learn_load6_2_3, learn_load6_2_4, learn_load6_2_5, learn_load6_2_6,
+ ret_load6_2_4, ret_load6_2_5, ret_load6_2_1, ret_load6_2_2, ret_load6_2_6, ret_load6_2_3)]
+/ responsemode = free
+/ branch = [block.block_load6_3]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load6_3>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load6_3_1, learn_load6_3_2, learn_load6_3_3, learn_load6_3_4, learn_load6_3_5, learn_load6_3_6,
+ ret_load6_3_3, ret_load6_3_5, ret_load6_3_1, ret_load6_3_4, ret_load6_3_2, ret_load6_3_6)]
+/ responsemode = free
+/ branch = [block.block_load6_4]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+<block block_load6_4>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_m1, learn_load6_4_1, learn_load6_4_2, learn_load6_4_3, learn_load6_4_4, learn_load6_4_5, learn_load6_4_6,
+ ret_load6_4_5, ret_load6_4_6, ret_load6_4_3, ret_load6_4_4, ret_load6_4_2, ret_load6_4_1)]
+/ responsemode = free
+/ branch = [block.block_end]
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+**************************************************************
+			Anfang, Ende und relevante Elemente 
+**************************************************************
+
+<block instruction>
+/ bgstim=(wallpaper)
+/ trials = [1= sequence(achtung_bsp)]
+/ responsemode = free
+</block>
+
+<trial party>  
+/ timeout = 13750
+/ stimulusframes = [1=wallpaper, picture_start, picture_confetti, speaker, audio_zwischenload]
+</trial>
+
+<trial end>  
+/ inputdevice = mouse
+/ validresponse = (arrow_forward)
+/ stimulustimes = [0=wallpaper, arrow_forward, audio14, speaker, picture.end; 16500= wallpaper, arrow_forward, no_speaker, picture.end]
+/ beginresponsetime = 10750
+</trial>
+
+<block block_end>
+/ trials = [1 = end]
+/ bgstim = (wallpaper)
+/ onblockend = [
+	values.stopscript += 1
+]
+</block>
+
+
+**************************************************************
+					Experiment
+**************************************************************
+
+<expt>
+/ blocks = [1 = sequence (instruction, block_uebe2_1, 
+						  block_load2_1, block_load2_2, 
+						  block_load3_1, block_load3_2, block_load3_3, 
+						  block_load4_1, block_load4_2, block_load4_3, block_load4_4, 
+						  block_load5_1, block_load5_2, block_load5_3, block_load5_4, block_load5_5, 
+						  block_load6_1, block_load6_2, block_load6_3, block_load6_4,
+						  block_end
+			)]
+/ stop = [
+	values.stopscript == 19
+]
+</expt>

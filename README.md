@@ -12,6 +12,6 @@ To run the tests, you will need an [Inquisit] (Version 6.6.1) license. Inquisit 
   width="400" height="578">
 </p>
 
-[PsyArxiv]: https://psyaxiv.com/xxx/
+[PsyArxiv]: https://osf.io/preprints/psyarxiv/awyxe
 [Inquisit]: https://www.millisecond.com/
 

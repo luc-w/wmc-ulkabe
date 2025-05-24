@@ -6,11 +6,7 @@ B. Goecke, L. Zimny, J. Hartung, P. Lösche, J. Golle, and O. Wilhelm, “Measur
 
 To run the tests, you will need an [Inquisit] (Version 6.6.1) license. Inquisit has a 30 day trial period during which it is fully functional. 
 
-<p align="center">
-<img src="https://i.ibb.co/pwctHb2/tasks.png"
-  alt="WMC Tasks"
-  width="400" height="578">
-</p>
+![Tasks](tasks.png)
 
 [PsyArxiv]: https://osf.io/preprints/psyarxiv/awyxe
 [Inquisit]: https://www.millisecond.com/
